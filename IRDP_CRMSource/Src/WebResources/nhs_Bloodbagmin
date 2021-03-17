@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 85 85" xmlns="http://www.w3.org/2000/svg">
+<g>
+<title>background</title>
+<rect x="-1" y="-1" width="87" height="87" fill="none"/>
+</g>
+<g>
+<title>Layer 1</title>
+<path d="m62.604 48.678h-39.721c-2.0557 0-3.7518-1.2636-3.7518-2.835v-30.013c0-1.5588 1.696-2.8224 3.7518-2.8224h39.719c2.0629 0 3.7351 1.2654 3.7351 2.8224v30.013c0.00238 1.5714-1.6698 2.835-3.7327 2.835zm-32.706 25.942h10.693-10.693zm14.983 0h10.693-10.693zm14.981 0h0.62649c2.0605 0 4.9971-0.24381 6.6574-0.97641 3.3325-1.4652 4.567-4.366 4.567-7.489v-3.978-16.326-33.372-3.978c0-4.68-5.0262-9.5089-11.22-8.478h-35.517c-6.1934-1.2371-11.22 3.798-11.22 8.478v3.978 33.372 16.326 3.978c0 2.925 1.3467 5.9132 4.3338 7.4306 1.7889 0.9144 4.5657 1.0348 6.8882 1.0348h0.62648 34.257z" stroke="null"/>
+<rect x="40.825" y="72.361" width="6.5979" height="12.784" fill="null" fill-opacity="null" stroke="null" stroke-opacity="null" stroke-width="null"/>
+<rect x="51.959" y="72.361" width="6.5979" height="12.784" fill="null" fill-opacity="null" stroke="null" stroke-opacity="null" stroke-width="null"/>
+<rect x="29.278" y="72.361" width="6.5979" height="12.784" fill="null" fill-opacity="null" stroke="null" stroke-opacity="null" stroke-width="null"/>
+<rect x="40" y="17.104" width="8.4536" height="27.629" fill="null" fill-opacity="null" stroke="null" stroke-opacity="null" stroke-width="null"/>
+<rect x="17.526" y="9.4749" width="8.0412" height="43.093" fill="null" fill-opacity="null" stroke="null" stroke-opacity="null" stroke-width="null"/>
+<rect x="62.474" y="9.2687" width="5.9794" height="43.505" fill="null" fill-opacity="null" stroke="null" stroke-opacity="null" stroke-width="null"/>
+<rect transform="rotate(90 44.227 30.918)" x="40" y="17.104" width="8.4536" height="27.629" fill="null" fill-opacity="null" stroke="null" stroke-opacity="null" stroke-width="null"/>
+</g>
+</svg>

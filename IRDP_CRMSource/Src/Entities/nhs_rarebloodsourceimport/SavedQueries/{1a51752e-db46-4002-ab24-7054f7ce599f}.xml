@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1a51752e-db46-4002-ab24-7054f7ce599f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_rarebloodsourceimportid">
+          <cell name="nhs_rarebloodsource" width="100" />
+          <cell name="nhs_parentaccount" width="100" />
+          <cell name="nhs_headerrow" width="100" />
+          <cell name="nhs_datarow" width="100" />
+          <cell name="nhs_iscreate" width="100" />
+          <cell name="nhs_isupdate" width="100" />
+          <cell name="nhs_isdeactivate" width="100" />
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_rarebloodsourceimport">
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="true" />
+          <attribute name="nhs_rarebloodsource" />
+          <attribute name="nhs_parentaccount" />
+          <attribute name="nhs_headerrow" />
+          <attribute name="nhs_isdeactivate" />
+          <attribute name="nhs_datarow" />
+          <attribute name="createdby" />
+          <attribute name="nhs_isupdate" />
+          <attribute name="nhs_iscreate" />
+          <attribute name="nhs_rarebloodsourceimportid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0157.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Rare Blood Source Import Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

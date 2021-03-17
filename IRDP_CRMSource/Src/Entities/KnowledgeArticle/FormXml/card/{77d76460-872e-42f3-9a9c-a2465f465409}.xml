@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{77d76460-872e-42f3-9a9c-a2465f465409}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{8d624810-6117-429c-9f48-c2f54568691d}" IsUserDefined="0">
+          <labels>
+            <label description="Knowledge Article card" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section name="ColorStrip" showlabel="false" showbar="false" id="{D7D1C4BD-F63C-4E32-A57F-6293981CCA4B}" IsUserDefined="0" columns="1" locklevel="1">
+                  <labels>
+                    <label description="ColorStrip" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1bc85c99-7ce5-4294-8ebe-35f7382ead3d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="75%">
+              <sections>
+                <section name="CardHeader" showlabel="false" showbar="false" id="{ea70e30c-252e-47d9-9599-8903e26b5c70}" IsUserDefined="0" columns="111" locklevel="1">
+                  <labels>
+                    <label description="Header" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3afa978f-e57d-4e0e-8eb7-52e03ada4140}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Author Id" languagecode="1033" />
+                        </labels>
+                        <control id="primaryauthorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="primaryauthorid" disabled="false" />
+                      </cell>
+                      <cell id="{7df39915-193c-454b-8676-79a6117883af}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                      <cell id="{1e3ac32d-53ac-4473-ad2a-8f43b6077e48}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardDetails" showlabel="false" showbar="false" id="{34e9a025-66a4-4bc2-a2e1-526e70b8f207}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{47a0868e-4416-4d78-bbf3-b36320b8e949}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="title" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f8a0d45b-3478-42c6-9cd3-d5dc49ce795e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca324623-61e8-4eb4-b063-f1d005b8e07c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Language" languagecode="1033" />
+                        </labels>
+                        <control id="languagelocaleid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="languagelocaleid" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardFooter" showlabel="false" showbar="false" id="{a4edbdf5-31d6-4a89-b202-4c3975bbee4d}" IsUserDefined="0" columns="1111">
+                  <labels>
+                    <label description="Footer" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cb9d85fc-3290-4887-9fe5-951dd6f4fbef}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Major Version Number" languagecode="1033" />
+                        </labels>
+                        <control id="majorversionnumber" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="majorversionnumber" disabled="true" />
+                      </cell>
+                      <cell id="{7cab9318-0796-4272-8c1d-abb9b1aca6f8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Minor Version Number" languagecode="1033" />
+                        </labels>
+                        <control id="minorversionnumber" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="minorversionnumber" disabled="true" />
+                      </cell>
+                      <cell id="{9b52659e-7547-43c0-a0c2-e3436a93a909}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Knowledge Article Views" languagecode="1033" />
+                        </labels>
+                        <control id="knowledgearticleviews" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="knowledgearticleviews" disabled="false" />
+                      </cell>
+                      <cell id="{d372b9c8-ea00-8bd0-e9e0-a8d817bb3b5d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Rating" languagecode="1033" />
+                        </labels>
+                        <control id="rating" classid="{C3EFE0C3-0EC6-42be-8349-CBD9079DFD8E}" datafieldname="rating" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Knowledge Article Card" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default Knowledge Article card" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5075a5fe-2d0d-455e-8f20-d387650089d1}</formid>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{1bb5ad7c-8d1b-45d6-9b4f-9ffe41dffe9f}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{fa9916e1-579a-45df-82dc-c6676bc07ed2}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{39e9d712-6a38-4c38-a4af-495325611925}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cb79c65a-43d4-ae0b-47be-8a07bb5bcbeb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="System Symbol" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_systemsymbol" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_systemsymbol" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4476b4d6-80a6-eb5c-c692-355eea89b000}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="ISBT Number" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_isbtno" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_isbtno" disabled="false" uniqueid="{1311a0eb-9e09-60c1-1188-8090804c66c0}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{7d93039a-41d1-6da0-258e-b1a8c0062e80}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Antigens" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{ab6b6e28-607c-0061-37ac-6773e7990dec}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c63e9643-5887-4c4e-9c73-b7909843c611}" showlabel="false" colspan="1" auto="false" rowspan="14">
+                        <labels>
+                          <label description="Antigens (Parent Blood Group System)" languagecode="1033" />
+                        </labels>
+                        <control id="Antigens" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{8986b95a-eb2d-8586-98a0-a07746520b6d}">
+                          <parameters>
+                            <ViewId>{400A7643-9279-4FF2-8B74-ABB9915E9E14}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>nhs_nhs_bloodgroupsystem_nhs_antigen_ParentBloodGroupSystemId</RelationshipName>
+                            <TargetEntityType>nhs_antigen</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{400A7643-9279-4FF2-8B74-ABB9915E9E14}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>12</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8e8dc1ba-6b2d-419a-863d-3a11e17121fc}" columns="111">
+        <rows>
+          <row>
+            <cell id="{4da5d37e-9b80-4a7b-83f6-7d41a4bd68d6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7823a0d7-6ed6-4660-8094-8c88b413b4eb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{25a7c069-b7c6-5064-5273-8bab39ee194d}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="nhs_BloodGroupSystemFormScript" libraryUniqueId="{c87c8c41-7dbd-017c-996d-3e4a9d1ee780}" />
+        <Library name="nhs_IrdpCommon.js" libraryUniqueId="{d056435d-6e3a-a3b9-bbce-d17ddc37b48d}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="nhs_isbtno">
+          <Handlers>
+            <Handler functionName="validateIsbtNo" libraryName="nhs_BloodGroupSystemFormScript" handlerUniqueId="{637c063b-a6e9-0c55-a7db-d970d4a5a3e4}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

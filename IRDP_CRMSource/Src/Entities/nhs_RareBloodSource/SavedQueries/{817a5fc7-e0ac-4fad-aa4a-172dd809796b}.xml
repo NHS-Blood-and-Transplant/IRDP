@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{817a5fc7-e0ac-4fad-aa4a-172dd809796b}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_panelcode" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_rarebloodsourceid">
+          <cell name="statecode" width="100" />
+          <cell name="nhs_panelcode" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="nhs_contributorcode" width="100" />
+          <cell name="nhs_abotype" width="100" />
+          <cell name="nhs_donorcount" width="100" />
+          <cell name="nhs_frozenunitcount" width="100" />
+          <cell name="statuscode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_rarebloodsource">
+          <attribute name="nhs_panelcode" />
+          <order attribute="nhs_panelcode" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="statecode" />
+          <attribute name="nhs_frozenunitcount" />
+          <attribute name="nhs_donorcount" />
+          <attribute name="nhs_contributorcode" />
+          <attribute name="nhs_abotype" />
+          <attribute name="nhs_rarebloodsourceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Inactive Donors/Units" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

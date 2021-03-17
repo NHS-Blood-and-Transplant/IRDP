@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{06333906-2e19-4d49-b75a-842ac1b4f819}" Name="Update User Primary entity with supplementary Values" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/UpdateUserPrimaryentitywithsupplementaryValues-06333906-2E19-4D49-B75A-842AC1B4F819.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>0</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnUpdateAttributeList>nhs_texttopostonwall,nhs_lastloginon,nhs_lastacceptedtermson</TriggerOnUpdateAttributeList>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <UpdateStage>40</UpdateStage>
+  <RunAs>0</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>0.0.0060.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>nhs_usersupplementaryfields</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Update User Primary entity with supplementary Values" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{1f665426-0eb3-42c8-813d-50701117312e}">
+      <label languagecode="1033" description="Processed values from Supplementary User Data" />
+    </steplabels>
+  </labels>
+</Workflow>

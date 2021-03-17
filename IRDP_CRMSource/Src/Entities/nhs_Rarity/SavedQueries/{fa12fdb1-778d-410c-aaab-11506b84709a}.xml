@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fa12fdb1-778d-410c-aaab-11506b84709a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_nameunicode" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_rarityid">
+          <cell name="nhs_nameunicode" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="nhs_namehtml" width="100" />
+          <cell name="nhs_isukonly" width="100" />
+          <cell name="nhs_displayorder" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_rarity">
+          <attribute name="nhs_nameunicode" />
+          <order attribute="nhs_displayorder" descending="false" />
+          <attribute name="nhs_namehtml" />
+          <attribute name="nhs_isukonly" />
+          <attribute name="nhs_displayorder" />
+          <attribute name="nhs_rarityid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Rarity Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

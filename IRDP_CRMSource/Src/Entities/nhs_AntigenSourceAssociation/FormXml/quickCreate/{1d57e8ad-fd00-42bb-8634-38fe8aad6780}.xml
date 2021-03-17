@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1d57e8ad-fd00-42bb-8634-38fe8aad6780}</formid>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{5c0e334e-9201-4eeb-839f-8289bf8d7283}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{dcc4cbf8-788e-4ebb-8ae3-8c63d2ce2e8d}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{892cd0ab-0cca-1c49-040d-12b854cc2364}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Antigen" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_antigenid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nhs_antigenid" disabled="false" uniqueid="{5655e481-b1e7-3d71-cae4-7a803b8c01d0}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{05796E0A-AAA7-4133-98E6-4173D5DA8E9F}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AvailableViewIds>{05796E0A-AAA7-4133-98E6-4173D5DA8E9F}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{20dbd806-fd4b-4f42-8dc7-0b9cc82d84c5}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3b634a84-0a70-884d-9670-3624224cc133}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Antigen Result" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_antigenresult" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="nhs_antigenresult" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{5191eafa-2469-4f33-845c-5d7eab0f5b49}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ac235519-4dcb-1015-eb99-e3c1b666401c}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Explicit" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_isexplicit" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="nhs_isexplicit" disabled="false" uniqueid="{95c97b04-d8d3-abc2-6d5a-cdc793069ecd}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7763591e-c7e8-2627-abb2-4836d5024636}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Source" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_sourceid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nhs_sourceid" disabled="false" uniqueid="{0bde5282-06aa-2630-bb59-6e3ea56b146e}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{64496131-E358-4CE3-A285-77E652682D15}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <formLibraries>
+        <Library name="nhs_global" libraryUniqueId="{bba21187-1737-aec1-7020-2bba34b9e4e3}" />
+        <Library name="nhs_AntigenSourceAssociationFormScript" libraryUniqueId="{3c6ad024-1246-902a-1772-56a0d28907b1}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="formOnLoad" libraryName="nhs_AntigenSourceAssociationFormScript" handlerUniqueId="{0202ab6e-7754-7a14-79ae-76ce9d7a525b}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="nhs_antigenid">
+          <Handlers>
+            <Handler functionName="validateAntigenSelection" libraryName="nhs_AntigenSourceAssociationFormScript" handlerUniqueId="{53bb4097-5e37-d171-5679-b705186eb457}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <controlDescriptions />
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create Antigen Association" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Rare Blood Donor Map</title>
+    <script src="ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="nhs_RareBloodDonorMap.css">
+        <link rel="stylesheet" type="text/css" href="nhs_jqueryselect2">
+    <meta>
+</head>
+<body xmlns="http://www.w3.org/1999/xhtml">
+    <div id="myMap" style="overflow: hidden; position: absolute; margin: 0 auto; left:0; top: 0; width: 100%; height: 100%;">
+        <div id="customButtonsOverlay" style="position: absolute; top: 0; width: 100%; height: 100%; pointer-events: none;">
+            <div style="position: absolute; padding-left: 12px; padding-top: 12px; z-index: 800">
+                <svg xmlns="http://www.w3.org/2000/svg" id="filterOptions" viewBox="0 0 30 30" width="35.5px" height="40.5px" class="Icon Hidden ShowAfterLoad">
+                    <g>
+                        <g>
+                            <circle class="customIconStyle0" cx="15.3" cy="15.3" r="13">
+                                <title>Amend filter options.</title>
+                            </circle>
+                            <g class="customIconStyle1">
+                                <path class="customIconStyle0" d="M15.3,2.3c7.2,0,13,5.8,13,13s-5.8,13-13,13s-13-5.8-13-13S8.1,2.3,15.3,2.3 M15.3,0.3c-8.3,0-15,6.7-15,15s6.7,15,15,15s15-6.7,15-15S23.5,0.3,15.3,0.3L15.3,0.3z"></path>
+                            </g>
+                            <path class="customIconStyle2" d="M15.3,3.3c6.6,0,12,5.4,12,12s-5.4,12-12,12s-12-5.4-12-12S8.6,3.3,15.3,3.3 M15.3,2.3c-7.2,0-13,5.8-13,13s5.8,13,13,13s13-5.8,13-13S22.4,2.3,15.3,2.3L15.3,2.3z"></path>
+                        </g>
+                        <g class="customIconStyle4"
+                           transform="scale(0.08) translate(-250 -40) ">
+                            <path id="path3777"
+                                  d="m350 144.09h180v20l-70 90v100l-40-20v-80l-70-90v-20" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div style="right: 0; bottom: 0; position: absolute; padding: 0 20px 40px 0; z-index: 800">
+                <svg xmlns="http://www.w3.org/2000/svg" id="downloadResults" viewBox="0 0 30 30" width="35.5px" height="40.5px" class="Icon Hidden ShowAfterLoad indefiniteProgressOverlay svgDisabled">
+                    <g>
+                        <circle class="customIconStyle0 svgDisabled" cx="15.3" cy="15.3" r="13">
+                            <title>Download the results as a CSV file.</title>
+                        </circle>
+                        <g class="customIconStyle1">
+                            <path class="customIconStyle0 svgDisabled" d="M15.3,2.3c7.2,0,13,5.8,13,13s-5.8,13-13,13s-13-5.8-13-13S8.1,2.3,15.3,2.3 M15.3,0.3c-8.3,0-15,6.7-15,15s6.7,15,15,15s15-6.7,15-15S23.5,0.3,15.3,0.3L15.3,0.3z"></path>
+                        </g>
+                        <path class="customIconStyle2 svgDisabled" d="M15.3,3.3c6.6,0,12,5.4,12,12s-5.4,12-12,12s-12-5.4-12-12S8.6,3.3,15.3,3.3 M15.3,2.3c-7.2,0-13,5.8-13,13s5.8,13,13,13s13-5.8,13-13S22.4,2.3,15.3,2.3L15.3,2.3z"></path>
+                    </g>
+                    <g class="customIconStyle4 svgDisabled" transform="scale(0.017) translate(380 360)">
+                        <polygon points="826.7,663.3 826.7,859.3 173.3,859.3 173.3,663.3 42.7,663.3 42.7,859.3 42.7,990 957.3,990 957.3,859.3 957.3,663.3 " />
+                        <polygon points="761.3,467.3 630.7,467.3 630.7,10 369.3,10 369.3,467.3 238.7,467.3 500,794 " />
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div id="blockMapClicksOverlay" style="position: absolute; width: 100%; height: 100%; z-index: 1050; pointer-events: auto; display: none; top: 0; text-align: center;"></div>
+        <div id="noResultsOverlay" style="position: absolute; width: 100%; height: 100%; z-index: 1050; pointer-events: auto; display: none; top: 0; text-align: center;">
+            <div id="noResultsFoundMessage">No results found</div>
+        </div>
+        <div id="indefiniteProgressOverlay" style="position: absolute; width: 100%; height: 100%; z-index: 1000; pointer-events: auto; display: block; top: 0; background-color: rgba(255, 255, 255, 0.4)"></div>
+        <div id="filterOptionsOverlay" class="optionsPaneOverlayLeft">
+            <div id="filterOptionsHeader" class="optionsPaneHeader">
+                <div id="filterOptionsHeader_title" class="optionsPaneHeader_title">Filter Options</div>
+                <div style="float: right; padding-right: 4px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="hideFilterOptions" viewBox="0 0 30 30" width="30px" height="30px" class="Icon Hidden ShowAfterLoad">
+                        <path class="filterOptionWhiteSVG" d="M5,7 l 16,16 -8,-8 l -8,8 16,-16"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="filterOptionsCollection" class="optionsPaneCollection">
+                <div id="FilterClassAboGroup" class="filterOptionDiv">
+                    <div class="filterOptionTextDiv">
+                        <div id="FilterAboGroup" class="filterOption_Label">
+                            ABO Groups
+                        </div>
+                        <div class="filterOption_Description">
+                            Choose ABO group you require - results will match ANY.
+                        </div>
+                    </div>
+                    <div class="filterControlDiv" style="z-index: 1600;">
+                        <select id="aboGroup" class="filterOptions_dropDownSelector"></select>
+                    </div>
+                </div>
+                <div id="FilterClassRarity" class="filterOptionDiv">
+                    <div class="filterOptionTextDiv">
+                        <div id="FilterRarity" class="filterOption_Label">
+                            Rarities
+                        </div>
+                        <div class="filterOption_Description">
+                            Select the rarities you wish to query - results will match ALL.
+                        </div>
+                    </div>
+                    <div class="filterControlDiv" style="z-index: 1550;">
+                        <select id="rarity" class="filterOptions_dropDownSelector"></select>
+                    </div>
+                </div>
+                <div id="FilterClassAntigen" class="filterOptionDiv">
+                    <div class="filterOptionTextDiv">
+                        <div id="FilterAntigen" class="filterOption_Label">
+                            Antigens
+                        </div>
+                        <div class="filterOption_Description">
+                            Select the antigens you wish to query - results will match ALL.
+                        </div>
+                    </div>
+                    <div class="filterControlDiv">
+                        Absent - <br />
+                        <select id="antigenAbsent" class="filterOptions_dropDownSelector"></select>
+                    </div>
+                </div>
+                <div id="runButtonSection" class="filterOptionDiv">
+                    <div class="filterOptionTextDiv" style="width:240px">
+                        <div id="FilterAddRarityLabel" class="filterOption_Label">
+                        </div>
+                        <div class="filterOption_Description" id="findButton_minCriteriaDesc">
+                            You must select at least one antigen or rarity to search.
+                        </div>
+                    </div>
+                    <div class="filterControlDiv">
+                        <button id="buttonFind" class="filterOptions_button" style="height: 40px; border-radius: 20px">
+                            Find
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="entityFormOverlay" class="optionsPaneOverlayRight">
+            <div id="entityFormHeader" class="optionsPaneHeader optionsPaneHeader_Right" style="height: 60px">
+                <div id="instTitle" class="optionsPaneHeader_title" style="white-space: pre">Entity Form</div>
+                <div id="entityFormClose" class="detailsFormClose" style="float: right; padding-right: 4px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="hideFilterOptions" viewBox="0 0 30 30" width="30px" height="30px" class="Icon Hidden ShowAfterLoad">
+                        <path class="filterOptionWhiteSVG" d="M5,7 l 16,16 -8,-8 l -8,8 16,-16"></path>
+                    </svg>
+                </div>
+            </div>
+            <div id="DetailsPaneContent" class="optionsPaneCollection">
+                <div id="institutionDetails">
+                    <div id="instAddressBlock" class="filterOptionDiv" style="white-space: pre"></div>
+                    <div id="contactDetails" class="filterOptionDiv"></div>
+                </div>
+                <div id="bloodSourceCollection"></div>
+            </div>
+        </div>
+    </div>
+<script type='text/javascript' src='nhs_jQuery3.4.1.js'></script>
+<script type='text/javascript' src='nhs_jqueryselect2.js'></script>
+<script type='text/javascript' src='nhs_FileSaver'></script>
+<script type='text/javascript' src='nhs_IrdpCommon.js'></script>
+<script type='text/javascript' src='nhs_RareBloodDonorMap.js'></script>
+<script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=rareBoodDonorMap_onLoad" async="" defer=""></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{414c30bc-715c-ea11-a811-000d3a3a76f4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_raritysourceassociationid">
+          <cell name="a_67ae5746fa11ea11a811000d3a86b423.nhs_nameunicode" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="nhs_raritysourceassociation">
+          <link-entity name="nhs_rarity" from="nhs_rarityid" to="nhs_rarityid" visible="false" link-type="outer" alias="a_67ae5746fa11ea11a811000d3a86b423">
+            <attribute name="nhs_nameunicode" />
+          </link-entity>
+          <attribute name="nhs_raritysourceassociationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0077.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Rarity-Source Associations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

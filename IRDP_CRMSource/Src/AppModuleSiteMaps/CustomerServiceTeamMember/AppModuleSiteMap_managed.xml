@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>CustomerServiceTeamMember</SiteMapUniqueName>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="New_Area" ResourceId="SitemapDesigner.NewArea" DescriptionResourceId="SitemapDesigner.NewArea" ShowGroups="true" IntroducedVersion="7.0.0.0" ordinalvalue="0">
+      <Group Id="New_Group" ResourceId="SitemapDesigner.NewGroup" DescriptionResourceId="SitemapDesigner.NewGroup" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="0" solutionaction="Removed" />
+      <Group Id="NewGroup_240bc5a6" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="0" solutionaction="Added">
+        <Titles>
+          <Title LCID="1033" Title="Find Blood" />
+        </Titles>
+        <SubArea Id="NewSubArea_a1bbb178" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/nhs_Earth" Icon="/WebResources/nhs_Earth" Url="$webresource:nhs_RareDonorMap.html" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0">
+          <Titles>
+            <Title LCID="1033" Title="Rare Blood Search" ordinalvalue="0" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_bf01727d" VectorIcon="/WebResources/nhs_History" Icon="/WebResources/nhs_History" Entity="nhs_searchexecution" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1033" Title="Search History" ordinalvalue="0" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="NewSubArea_dc89b1b2" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/nhs_Help" Icon="/WebResources/nhs_Help" Url="$webresource:nhs_HelpPage_Consumer.html" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2">
+          <Titles>
+            <Title LCID="1033" Title="Help Finding Blood" ordinalvalue="0" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="NewGroup_9b3b9447" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="1" solutionaction="Added">
+        <Titles>
+          <Title LCID="1033" Title="Contribute" />
+        </Titles>
+        <SubArea Entity="account" Icon="/WebResources/nhs_GovernmentBuildingmin" Id="NewSubArea_899b7fbd" AvailableOffline="true" PassParams="false" Client="Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,Live,OnPremise,SPLA" ordinalvalue="0">
+          <Titles>
+            <Title LCID="1033" Title="Institutions" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="account" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_cbfadb99" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="contact" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1033" Title="Contacts" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="contact" Privilege="Write" />
+        </SubArea>
+        <SubArea Entity="nhs_rarebloodsource" Icon="/WebResources/nhs_Bloodbagmin" Id="NewSubArea_d521c8d1" AvailableOffline="true" PassParams="false" Client="Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,Live,OnPremise,SPLA" ordinalvalue="2">
+          <Titles>
+            <Title LCID="1033" Title="Donors/Units" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_rarebloodsource" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_4d183f22" ResourceId="Homepage_Dashboards" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="2854ef23-4e68-ea11-a811-000d3a3a7f02" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3">
+          <Titles>
+            <Title LCID="1033" Title="Contributor Dashboard" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_rarebloodsource" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_bef4644f" ResourceId="SitemapDesigner.NewSubArea" VectorIcon="/WebResources/nhs_Help" Icon="/WebResources/nhs_Help" Url="$webresource:nhs_HelpPage_Contributor.html" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="4">
+          <Titles>
+            <Title LCID="1033" Title="Help Maintaining Data" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_rarebloodsource" Privilege="Write" />
+        </SubArea>
+      </Group>
+      <Group Id="NewGroup_d7b066f4" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="2" solutionaction="Added">
+        <Titles>
+          <Title LCID="1033" Title="Reference Data" />
+        </Titles>
+        <SubArea Id="NewSubArea_1782d38b" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nhs_country" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0">
+          <Titles>
+            <Title LCID="1033" Title="Countries" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_country" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_9196df37" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nhs_bloodgroupsystem" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1033" Title="Blood Group Systems" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_bloodgroupsystem" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_9b4aba7d" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nhs_antigen" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2">
+          <Titles>
+            <Title LCID="1033" Title="Antigens" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_antigen" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_a1f9aa8" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="nhs_rarity" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3">
+          <Titles>
+            <Title LCID="1033" Title="Rarities" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_rarity" Privilege="Write" />
+        </SubArea>
+      </Group>
+      <Group Id="NewGroup_f2f7d918" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="3" solutionaction="Added">
+        <Titles>
+          <Title LCID="1033" Title="System Config" />
+        </Titles>
+        <SubArea Id="NewSubArea_9cba9eef" ResourceId="Homepage_Dashboards" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="3fd1ef9c-9e6a-ea11-a811-000d3a3a76f4" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0">
+          <Titles>
+            <Title LCID="1033" Title="Admin Dashboard" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_configentity" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_bb40b181" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="team" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1033" Title="Teams" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="team" Privilege="Write" />
+        </SubArea>
+        <SubArea Id="NewSubArea_c485cdca" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="systemuser" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2">
+          <Titles>
+            <Title LCID="1033" Title="Users" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="systemuser" Privilege="Read" />
+        </SubArea>
+        <SubArea Id="NewSubArea_fe384861" VectorIcon="/WebResources/Sales/_imgs/saleAdminSetting/SettingsIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/SettingsIcon.svg" Entity="nhs_configentity" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3">
+          <Titles>
+            <Title LCID="1033" Title="System Options" ordinalvalue="0" />
+          </Titles>
+          <Privilege Entity="nhs_configentity" Privilege="Write" />
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="IRDP Customer Service Team Member" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

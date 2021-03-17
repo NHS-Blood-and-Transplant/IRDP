@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{86c952aa-a512-46bb-b8a1-879ec09231f2}</formid>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{a4678868-060e-4176-a776-e0f9c0c2e113}" IsUserDefined="1" name="{a4678868-060e-4176-a776-e0f9c0c2e113}" locklevel="0" expanded="true" showlabel="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{e7d062b4-bb19-4c08-98b6-fffe42cbb8de}" name="{e7d062b4-bb19-4c08-98b6-fffe42cbb8de}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{65ff268f-d7e7-4b71-b1fb-348c0c1f3af8}">
+                        <labels>
+                          <label description="Name (Unicode)" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_nameunicode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_nameunicode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d907b92-3ed9-124b-dcbc-1c1432a81dc5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name (HTML)" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_namehtml" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_namehtml" disabled="false" uniqueid="{6a6964a0-e1e0-0bd0-6126-e6d5428c5a79}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="66%">
+              <sections>
+                <section name="{a4678868-060e-4176-a776-e0f9c0c2e113}_section_2" showlabel="true" showbar="false" locklevel="0" id="{308a9a1a-0ab3-23d7-810a-856da38a1617}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Antigen Associations" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{91cb7b28-c017-6405-9416-751613eb3523}" showlabel="false" colspan="1" auto="false" rowspan="14">
+                        <labels>
+                          <label description="Antigen-Rarity Associations (Rarity)" languagecode="1033" />
+                        </labels>
+                        <control id="AntigenRarityAssociations" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{8e8cce50-e433-d2be-1bea-04e3ab264927}">
+                          <parameters>
+                            <ViewId>{B511F74A-31FD-440B-B7A3-92B76188145B}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>nhs_nhs_rarity_nhs_antigenrarityassociation_RarityId</RelationshipName>
+                            <TargetEntityType>nhs_antigenrarityassociation</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{B511F74A-31FD-440B-B7A3-92B76188145B}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>12</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{b65089b0-433e-4677-a4ae-5f0580805a98}" columns="111">
+        <rows>
+          <row>
+            <cell id="{a16d4edc-aed5-4279-a425-f25f6c08c174}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{82a988c0-1949-4f26-bb2a-7a598a16e535}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{57a7e58c-2081-410e-3aa5-41d63e55725d}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="nhs_nhs_rarity_nhs_antigenrarityassociation_RarityId" Sequence="10000" Area="Info" Id="nav_nhs_nhs_rarity_nhs_antigenrarityassociation_RarityId" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Antigen-Rarity Associations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="nhs_nhs_rarity_nhs_raritysourceassociation_RarityId" Sequence="10000" Area="Info" Id="nav_nhs_nhs_rarity_nhs_raritysourceassociation_RarityId" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Rarity-Source Associations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="nhs_IrdpCommon.js" libraryUniqueId="{9aa8227d-4136-193c-0236-86c4a29c5e79}" />
+        <Library name="nhs_RarityFormScript" libraryUniqueId="{c751dc9c-21bc-0c0a-ed9c-76c1cea3b141}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="nhs_namehtml">
+          <Handlers>
+            <Handler functionName="validateHtmlName" libraryName="nhs_RarityFormScript" handlerUniqueId="{98472848-0bda-aeea-8e54-3067e0bcbd44}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_searchexecution.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.nhs_searchexecution.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_searchexecution.NewRecord.Hide" Location="Mscrm.Form.nhs_searchexecution.NewRecord" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_searchexecution.NewRecordForBPFEntity.Hide" Location="Mscrm.Form.nhs_searchexecution.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_searchexecution.SaveAndNew.Hide" Location="Mscrm.Form.nhs_searchexecution.SaveAndNew" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_searchexecution.SendSelected.Hide" Location="Mscrm.Form.nhs_searchexecution.SendSelected" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_searchexecution.Charts.Hide" Location="Mscrm.HomepageGrid.nhs_searchexecution.Charts" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_searchexecution.Flows.RefreshCommandBar.Hide" Location="Mscrm.HomepageGrid.nhs_searchexecution.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_searchexecution.NewRecord.Hide" Location="Mscrm.HomepageGrid.nhs_searchexecution.NewRecord" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_searchexecution.NewRecordForBPFEntity.Hide" Location="Mscrm.HomepageGrid.nhs_searchexecution.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_searchexecution.Send.Hide" Location="Mscrm.HomepageGrid.nhs_searchexecution.Send" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_searchexecution.AddNewStandard.Hide" Location="Mscrm.SubGrid.nhs_searchexecution.AddNewStandard" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_searchexecution.Charts.Hide" Location="Mscrm.SubGrid.nhs_searchexecution.Charts" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_searchexecution.NewRecord.Hide" Location="Mscrm.SubGrid.nhs_searchexecution.NewRecord" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_searchexecution.SendSelected.Hide" Location="Mscrm.SubGrid.nhs_searchexecution.SendSelected" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions />
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels />
+</RibbonDiffXml>

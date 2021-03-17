@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{43b3400c-1d96-4ad4-b882-be71f995acbb}</savedqueryid>
+    <layoutxml>
+      <grid name="nhs_rarities" jump="nhs_nameunicode" select="1" icon="1" preview="1">
+        <row name="nhs_rarity" id="nhs_rarityid">
+          <cell name="nhs_nameunicode" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_rarity">
+          <attribute name="nhs_rarityid" />
+          <attribute name="nhs_nameunicode" />
+          <attribute name="createdon" />
+          <order attribute="nhs_nameunicode" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Rarity Associated View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

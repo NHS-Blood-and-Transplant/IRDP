@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_raritysourceassociation.Activate.Hide" Location="Mscrm.Form.nhs_raritysourceassociation.Activate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_raritysourceassociation.Deactivate.Hide" Location="Mscrm.Form.nhs_raritysourceassociation.Deactivate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_raritysourceassociation.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.nhs_raritysourceassociation.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_raritysourceassociation.NewRecord.Hide" Location="Mscrm.Form.nhs_raritysourceassociation.NewRecord" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_raritysourceassociation.NewRecordForBPFEntity.Hide" Location="Mscrm.Form.nhs_raritysourceassociation.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_raritysourceassociation.Activate.Hide" Location="Mscrm.HomepageGrid.nhs_raritysourceassociation.Activate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_raritysourceassociation.Deactivate.Hide" Location="Mscrm.HomepageGrid.nhs_raritysourceassociation.Deactivate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_raritysourceassociation.Edit.Hide" Location="Mscrm.HomepageGrid.nhs_raritysourceassociation.Edit" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_raritysourceassociation.Flows.RefreshCommandBar.Hide" Location="Mscrm.HomepageGrid.nhs_raritysourceassociation.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_raritysourceassociation.NewRecord.Hide" Location="Mscrm.HomepageGrid.nhs_raritysourceassociation.NewRecord" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_raritysourceassociation.NewRecordForBPFEntity.Hide" Location="Mscrm.HomepageGrid.nhs_raritysourceassociation.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_raritysourceassociation.Activate.Hide" Location="Mscrm.SubGrid.nhs_raritysourceassociation.Activate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_raritysourceassociation.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.nhs_raritysourceassociation.AddExistingAssoc" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_raritysourceassociation.AddExistingStandard.Hide" Location="Mscrm.SubGrid.nhs_raritysourceassociation.AddExistingStandard" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_raritysourceassociation.Deactivate.Hide" Location="Mscrm.SubGrid.nhs_raritysourceassociation.Deactivate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_raritysourceassociation.Edit.Hide" Location="Mscrm.SubGrid.nhs_raritysourceassociation.Edit" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_raritysourceassociation.Remove.Hide" Location="Mscrm.SubGrid.nhs_raritysourceassociation.Remove" />
+    <CustomAction Id="nhs.nhs_raritysourceassociation.Button.RemoveForm.CustomAction" Location="Mscrm.Form.nhs_raritysourceassociation.MainTab.Save.Controls._children" Sequence="75">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveForm.Alt" Command="nhs.nhs_raritysourceassociation.remove.Form" Id="nhs.nhs_raritysourceassociation.Button.RemoveForm" Image32by32="$webresource:LeadManagement/_imgs/Workplace/remove_32.png" Image16by16="$webresource:LeadManagement/_imgs/ribbon/Delete_16.png" LabelText="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveForm.LabelText" Sequence="75" TemplateAlias="o2" ToolTipTitle="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveForm.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveForm.ToolTipDescription" ModernImage="Remove" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="nhs.nhs_raritysourceassociation.Button.RemoveHome.CustomAction" Location="Mscrm.HomepageGrid.nhs_raritysourceassociation.MainTab.Management.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveHome.Alt" Command="nhs.nhs_raritysourceassociation.remove.SubGrid" Id="nhs.nhs_raritysourceassociation.Button.RemoveHome" Image32by32="$webresource:LeadManagement/_imgs/Workplace/remove_32.png" Image16by16="$webresource:LeadManagement/_imgs/ribbon/Delete_16.png" LabelText="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveHome.LabelText" Sequence="0" TemplateAlias="o2" ToolTipTitle="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveHome.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveHome.ToolTipDescription" ModernImage="Remove" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.CustomAction" Location="Mscrm.SubGrid.nhs_raritysourceassociation.MainTab.Management.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.Alt" Command="nhs.nhs_raritysourceassociation.remove.SubGrid" Id="nhs.nhs_raritysourceassociation.Button.RemoveSubGrid" Image32by32="$webresource:LeadManagement/_imgs/Workplace/remove_32.png" Image16by16="$webresource:LeadManagement/_imgs/ribbon/Delete_16.png" LabelText="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.LabelText" Sequence="0" TemplateAlias="o2" ToolTipTitle="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.ToolTipDescription" ModernImage="Remove" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.Form.Deactivate">
+      <EnableRules>
+        <EnableRule Id="Mscrm.CanWritePrimary" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWritePrimary" />
+        <DisplayRule Id="Mscrm.PrimaryIsActive" />
+        <DisplayRule Id="Mscrm.PrimaryEntityHasStatecode" />
+        <DisplayRule Id="Mscrm.PrimaryIsNotActivity" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="confirmRemovalForm" Library="$webresource:nhs_RaritySourceAssociationFormScript">
+          <CrmParameter Value="FirstPrimaryItemId" />
+          <CrmParameter Value="PrimaryEntityTypeName" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.HomepageGrid.Deactivate">
+      <EnableRules>
+        <EnableRule Id="Mscrm.VisualizationPaneNotMaximized" />
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWriteSelected" />
+        <DisplayRule Id="Mscrm.SelectedEntityHasStatecode" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="confirmRemovalSubgrid" Library="$webresource:nhs_RareBloodSourceFormScript">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeName" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="nhs.nhs_raritysourceassociation.remove.Form">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWritePrimary" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="manuallyRemoveRarityAssociations" Library="$webresource:nhs_RaritySourceAssociationFormScript">
+          <CrmParameter Value="PrimaryItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="nhs.nhs_raritysourceassociation.remove.SubGrid">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+        <EnableRule Id="nhs.nhs_raritysourceassociation.EnableRule.PrimaryEntityis_nhs_RareBloodSource" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWritePrimary" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="manuallyRemoveRarityAssociations" Library="$webresource:nhs_RaritySourceAssociationFormScript">
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanWritePrimary">
+        <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.CanWriteSelected">
+        <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="SelectedEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryEntityHasStatecode">
+        <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="HasStateCode" PropertyValue="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsActive">
+        <FormStateRule State="Existing" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsNotActivity">
+        <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="IsActivity" PropertyValue="false" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.SelectedEntityHasStatecode">
+        <EntityPropertyRule AppliesTo="SelectedEntity" PropertyName="HasStateCode" PropertyValue="true" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.CanWritePrimary">
+        <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.SelectionCountAtLeastOne">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="1" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.VisualizationPaneNotMaximized">
+        <OrRule>
+          <Or>
+            <CommandClientTypeRule Type="Modern" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.Charts.disableButtonsWhenChartMaximized" Library="$webresource:Main_system_library.js">
+              <CrmParameter Value="SelectedControl" />
+            </CustomRule>
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="nhs.nhs_raritysourceassociation.EnableRule.PrimaryEntityis_nhs_RareBloodSource">
+        <EntityRule EntityName="nhs_rarebloodsource" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveForm.Alt">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveForm.LabelText">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveForm.ToolTipDescription">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveForm.ToolTipTitle">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveHome.Alt">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveHome.LabelText">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveHome.ToolTipDescription">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveHome.ToolTipTitle">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.Alt">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.LabelText">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.ToolTipDescription">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_raritysourceassociation.Button.RemoveSubGrid.ToolTipTitle">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

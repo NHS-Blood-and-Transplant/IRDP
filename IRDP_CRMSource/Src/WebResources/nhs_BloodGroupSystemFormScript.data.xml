@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{e8cd449a-f236-ea11-a813-000d3a3a7a43}</WebResourceId>
+  <Name>nhs_BloodGroupSystemFormScript</Name>
+  <DisplayName>nhs_BloodGroupSystemFormScript</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.0.0.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/nhs_BloodGroupSystemFormScriptE8CD449A-F236-EA11-A813-000D3A3A7A43</FileName>
+</WebResource>

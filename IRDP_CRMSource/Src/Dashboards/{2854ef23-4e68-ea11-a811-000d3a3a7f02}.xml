@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="Contributor Dashboard" languagecode="1033" />
+  </LocalizedNames>
+  <FormId>{2854ef23-4e68-ea11-a811-000d3a3a7f02}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="dashboard">
+      <form>
+        <tabs>
+          <tab showlabel="false" verticallayout="true" id="{2813d563-fa43-4fc8-bd3d-e6469f71726e}">
+            <labels>
+              <label description="Tab" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section showlabel="false" showbar="false" columns="111" id="{29c3777f-ded7-49f0-9dea-163b6b947b51}" name="{29c3777f-ded7-49f0-9dea-163b6b947b51}" locklevel="0" labelwidth="130">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="1" rowspan="18" showlabel="false" id="{fb0dd181-f305-4a25-b01c-8c61b4aa0b40}" auto="false">
+                          <labels>
+                            <label description="Rare Blood Sources" languagecode="1033" />
+                          </labels>
+                          <control id="Componented3d8a8" uniqueid="{d473ea9e-9528-6398-a420-54627c1ee7d9}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>nhs_rarebloodsource</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>16</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                              <ViewId>{7DEBB83F-BC12-EA11-A811-000D3A86B423}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{7DEBB83F-BC12-EA11-A811-000D3A86B423}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{0D97AAD5-4F68-EA11-A811-000D3A3A7F02}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="2" rowspan="6" showlabel="true" id="{f517374d-9cd2-48c5-9dcd-0717a972c2df}" auto="false">
+                          <labels>
+                            <label description="My Team's Donors/Units with Contradictory Antigen Associations" languagecode="1033" />
+                          </labels>
+                          <control id="Component09ba970" uniqueid="{83ca53cd-cd1e-3c3b-a553-d571a9b36a4b}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>nhs_rarebloodsource</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>2</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                              <ViewId>{D3A8F555-4E68-EA11-A811-000D3A3A7F02}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{7DEBB83F-BC12-EA11-A811-000D3A86B423}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{3BE73CA0-2E68-EA11-A811-000D3A3A7F02}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row>
+                        <cell id="{70d41823-402d-b5e6-9a6d-8ead7798b478}" showlabel="true" colspan="2" auto="false" rowspan="6">
+                          <labels>
+                            <label description="My Team's Donors/Units Last Reviewed &gt; 6 Months Ago" languagecode="1033" />
+                          </labels>
+                          <control id="Component7395643" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{e4b5d9be-dd1e-a90e-c1e1-bb234a75177b}">
+                            <parameters>
+                              <ViewId>{680873F6-798F-EA11-A811-000D3A3A7F02}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <RelationshipName />
+                              <TargetEntityType>nhs_rarebloodsource</TargetEntityType>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <ViewIds>{7DEBB83F-BC12-EA11-A811-000D3A86B423}</ViewIds>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <VisualizationId>{3BE73CA0-2E68-EA11-A811-000D3A3A7F02}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RecordsPerPage>2</RecordsPerPage>
+                              <HeaderColorCode>#FEF7F5</HeaderColorCode>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row>
+                        <cell colspan="2" rowspan="6" showlabel="true" id="{4098a77c-1913-45e2-b495-f01e66342713}" auto="false">
+                          <labels>
+                            <label description="My Team's File Upload Errors" languagecode="1033" />
+                          </labels>
+                          <control id="Component8508827" uniqueid="{ea178830-171c-7d61-c0d4-04870ce0a743}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>task</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>2</RecordsPerPage>
+                              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                              <ViewId>{6612B6CB-4E68-EA11-A811-000D3A3A7F02}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{6CF285AA-EB20-4277-925A-3E9735411FF0}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{9E6A8B06-6D14-46E6-BBF5-95C388C6EB7A}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+        <controlDescriptions />
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>0.0.0121.0</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</Dashboard>

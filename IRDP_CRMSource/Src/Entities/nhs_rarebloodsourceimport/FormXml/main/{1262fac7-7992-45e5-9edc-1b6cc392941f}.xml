@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1262fac7-7992-45e5-9edc-1b6cc392941f}</formid>
+    <IntroducedVersion>0.0.0157.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{902bbcc2-d28b-4163-afa2-5be749b449ac}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{65f9a127-332c-4947-8fc4-20d86b4be4b9}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7695e816-e735-37c4-386d-69262ace201d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Rare Blood Source" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_rarebloodsource" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nhs_rarebloodsource" disabled="true" uniqueid="{37e5c976-332d-944e-9edc-504d7d53da34}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{64496131-E358-4CE3-A285-77E652682D15}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{147a04e9-ad16-1848-e893-935d25a80343}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Account" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_parentaccount" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nhs_parentaccount" disabled="true" uniqueid="{c6bb1487-4608-ebb8-c79a-4770d2cdd6a9}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{194587c8-52c7-3553-0533-0838be48aa94}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Header Row" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_headerrow" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_headerrow" disabled="true" uniqueid="{4bd8b60d-2cd5-47cb-c643-3654a1de8630}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e897221b-93ae-5a34-d17d-258532b80633}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Data Row" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_datarow" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_datarow" disabled="true" uniqueid="{4662d87e-2729-8392-366e-0e496361657c}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8ba31090-5bab-3982-4a92-8020e08d62d6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_iscreate" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="nhs_iscreate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a218075e-e0d5-dc8a-4c13-61c54b819536}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Update" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_isupdate" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="nhs_isupdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a3c47dac-bbb0-5d9d-5e7a-b8254bdac879}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Deactivate" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_isdeactivate" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="nhs_isdeactivate" disabled="true" uniqueid="{7db8626d-ea2c-233b-7236-9483db616025}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{626eb3e9-9102-4759-8151-74864896f503}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_name" uniqueid="{732c2615-5317-5b40-16e3-929b19c955e2}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fe8dff60-024c-4dde-8ab6-a50367ed5a16}" showlabel="true" locklevel="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{9346150a-0dd8-1059-010a-c5188404eabc}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{b4b6a060-ca7d-4436-a8dd-d3f9098d4156}" columns="111">
+        <rows>
+          <row>
+            <cell id="{a02990c7-08b4-d34d-8368-e379dab2ab22}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" uniqueid="{a962bc7b-a9b3-ab7d-7413-108c81a74262}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+            <cell id="{b4810469-e0c7-ac5a-a649-aeb77cc4ba81}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Rare Blood Source" languagecode="1033" />
+              </labels>
+              <control id="header_nhs_rarebloodsource" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nhs_rarebloodsource" disabled="true" uniqueid="{e553b393-1ac1-7b18-419e-159d1d58a294}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                  <DisableQuickFind>false</DisableQuickFind>
+                  <DisableViewPicker>false</DisableViewPicker>
+                  <DefaultViewId>{64496131-E358-4CE3-A285-77E652682D15}</DefaultViewId>
+                  <AllowFilterOff>false</AllowFilterOff>
+                </parameters>
+              </control>
+            </cell>
+            <cell id="{e6d47c59-24cd-c8b4-09cb-dcb1da39eb76}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Parent Account" languagecode="1033" />
+              </labels>
+              <control id="header_nhs_parentaccount" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nhs_parentaccount" disabled="true" uniqueid="{c3e6c4b0-6822-6687-6029-2cc3c593059b}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                  <DisableQuickFind>false</DisableQuickFind>
+                  <DisableViewPicker>false</DisableViewPicker>
+                  <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                  <AllowFilterOff>false</AllowFilterOff>
+                </parameters>
+              </control>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{06060f65-6e2a-40aa-ba6b-0df865ed367f}" columns="111">
+        <rows>
+          <row>
+            <cell id="{d1d26e42-8757-4a32-9c77-088d279dca2a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9bde02b1-8630-41bc-164a-66dd7cbec794}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+              </labels>
+              <control id="footer_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" />
+            </cell>
+            <cell id="{2d12a17e-a7b1-dbac-0258-618083356b81}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+              </labels>
+              <control id="footer_createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

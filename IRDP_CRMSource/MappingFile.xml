@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping>
+  <FileToPath map="Src\WebResources\*.*" to="..\CrmPackage\WebResources\**" />
+  <FileToPath map="Src\WebResources\**\*.*" to="..\CrmPackage\WebResources\**" />
+  <FileToFile map="NHSBT.IRDP.Plugins.dll" to="..\IRDP_Plugins\bin\**\NHSBT.IRDP.Plugins.dll" />
+  <FileToFile map="IRDP_Workflows.dll" to="..\IRDP_Workflows\bin\**\IRDP_Workflows.dll" />
+</Mapping>

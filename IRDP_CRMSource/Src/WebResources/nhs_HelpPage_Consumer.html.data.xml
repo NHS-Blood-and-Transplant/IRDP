@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{a7c4ec0a-2665-ea11-a811-000d3a3a76f4}</WebResourceId>
+  <Name>nhs_HelpPage_Consumer.html</Name>
+  <DisplayName>nhs_HelpPage_Consumer.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>0.0.0109.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/nhs_HelpPage_ConsumerhtmlA7C4EC0A-2665-EA11-A811-000D3A3A76F4</FileName>
+</WebResource>

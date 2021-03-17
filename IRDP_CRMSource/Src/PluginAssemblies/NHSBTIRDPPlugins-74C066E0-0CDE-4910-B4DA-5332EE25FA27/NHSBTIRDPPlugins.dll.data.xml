@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginAssemblyId="74c066e0-0cde-4910-b4da-5332ee25fa27" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/NHSBTIRDPPlugins-74C066E0-0CDE-4910-B4DA-5332EE25FA27/NHSBTIRDPPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="NHSBT.IRDP.Plugins.AccountPlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginTypeId="acbd91eb-f2ac-42ab-b220-94cbf21609ac" Name="NHSBT.IRDP.Plugins.AccountPlugin">
+      <FriendlyName>9a9acc0e-9f00-46e1-a099-2d1b1db5e7a8</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="NHSBT.IRDP.Plugins.AntigenSourceAssociationPlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginTypeId="e61b106f-a401-439d-8aac-bf85d4a6a575" Name="NHSBT.IRDP.Plugins.AntigenSourceAssociationPlugin">
+      <FriendlyName>5cb8bd49-35c3-4c16-a5f1-8190d1c0a70d</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="NHSBT.IRDP.Plugins.ContactPlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginTypeId="462effc8-053e-44a1-9b6b-2ada2afcc2f8" Name="NHSBT.IRDP.Plugins.ContactPlugin">
+      <FriendlyName>90583e40-b939-47e1-b931-3312ab7f704f</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="NHSBT.IRDP.Plugins.NotePlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginTypeId="88a230c2-6b80-4b17-abcf-82111e2ffb18" Name="NHSBT.IRDP.Plugins.NotePlugin">
+      <FriendlyName>2e4d274c-8e13-48ed-b962-6f8dfb4137b9</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="NHSBT.IRDP.Plugins.RareBloodSourceImportPlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginTypeId="8f7e1ab0-44c6-4282-be50-4f0d11c263fd" Name="NHSBT.IRDP.Plugins.RareBloodSourceImportPlugin">
+      <FriendlyName>0fc034fd-f244-4f99-9d7a-876bdd8731cc</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="NHSBT.IRDP.Plugins.RareBloodSourcePlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginTypeId="8b37ab3c-441e-41ec-a676-475c2507161a" Name="NHSBT.IRDP.Plugins.RareBloodSourcePlugin">
+      <FriendlyName>70f9370e-c0bc-427e-8475-8e4987055368</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="NHSBT.IRDP.Plugins.RaritySourceAssociationPlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" PluginTypeId="824d9699-b94b-4fc2-b3c4-24bd90be2c76" Name="NHSBT.IRDP.Plugins.RaritySourceAssociationPlugin">
+      <FriendlyName>f648b0f2-c0b4-40ea-92d8-780654ce78ef</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="IRDP Admin Dashboard" languagecode="1033" />
+  </LocalizedNames>
+  <FormId>{3fd1ef9c-9e6a-ea11-a811-000d3a3a76f4}</FormId>
+  <IsCustomizable>1</IsCustomizable>
+  <IsDefault>0</IsDefault>
+  <FormXml>
+    <forms type="dashboard">
+      <form>
+        <tabs>
+          <tab showlabel="false" verticallayout="true" id="{763db3ae-16b3-41cf-ad2f-361e7c7566c2}">
+            <labels>
+              <label description="Tab" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section showlabel="false" showbar="false" columns="111" id="{5c84bafb-2a81-4aff-bf55-0273e1be671d}">
+                    <labels>
+                      <label description="Section" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell colspan="1" rowspan="12" showlabel="false" id="{98cee7bc-5545-4fae-a532-388ead4207dd}" auto="false">
+                          <labels>
+                            <label description="Rare Blood Source" languagecode="1033" />
+                          </labels>
+                          <control id="Componentc0eba74" uniqueid="{c638a786-0743-9a36-8150-6e174e1acb35}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>nhs_rarebloodsource</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>12</RecordsPerPage>
+                              <HeaderColorCode>#FEF7F5</HeaderColorCode>
+                              <ViewId>{AD5FFCC4-9F6A-EA11-A811-000D3A3A76F4}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{AD5FFCC4-9F6A-EA11-A811-000D3A3A76F4},{7DEBB83F-BC12-EA11-A811-000D3A86B423}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{6A971FAC-9D6A-EA11-A811-000D3A3A76F4}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" id="{5003d2fb-1a1f-47e5-bccc-5436fec0412f}" auto="false">
+                          <labels>
+                            <label description="Task" languagecode="1033" />
+                          </labels>
+                          <control id="Component23188fe" uniqueid="{d96666d8-9918-4b77-831a-341622360b84}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>task</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>10</RecordsPerPage>
+                              <HeaderColorCode />
+                              <ViewId>{0C8CB26D-9A6A-EA11-A811-000D3A3A76F4}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds />
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{3DE5114B-9D6A-EA11-A811-000D3A3A76F4}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="false" id="{e72e96b7-f3eb-477e-bddc-216700841ce2}" auto="false">
+                          <labels>
+                            <label description="Rare Blood Source" languagecode="1033" />
+                          </labels>
+                          <control id="Component7a73c8a" uniqueid="{9b50e40b-3374-36c2-5361-2830daddd70a}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>nhs_rarebloodsource</TargetEntityType>
+                              <ChartGridMode>Chart</ChartGridMode>
+                              <EnableQuickFind>false</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>false</EnableJumpBar>
+                              <RecordsPerPage>12</RecordsPerPage>
+                              <HeaderColorCode>#FEF7F5</HeaderColorCode>
+                              <ViewId>{03375819-996A-EA11-A811-000D3A3A76F4}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{03375819-996A-EA11-A811-000D3A3A76F4},{7DEBB83F-BC12-EA11-A811-000D3A86B423}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{24C7BC2A-9E6A-EA11-A811-000D3A3A76F4}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row>
+                        <cell colspan="1" rowspan="12" showlabel="true" id="{d5564164-6903-4d99-b119-7d859c166205}" auto="false">
+                          <labels>
+                            <label description="Donors/Units Last Updated &gt; 6 Months Ago" languagecode="1033" />
+                          </labels>
+                          <control id="Componentebb5662" uniqueid="{7b412222-7449-08b1-4c4e-dc1694b1148e}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>nhs_rarebloodsource</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>true</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>8</RecordsPerPage>
+                              <HeaderColorCode>#FEF7F5</HeaderColorCode>
+                              <ViewId>{AD5FFCC4-9F6A-EA11-A811-000D3A3A76F4}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{AD5FFCC4-9F6A-EA11-A811-000D3A3A76F4},{7DEBB83F-BC12-EA11-A811-000D3A86B423}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{3BE73CA0-2E68-EA11-A811-000D3A3A7F02}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="true" id="{35cbe088-dc21-4904-bf44-8fc1e1bd768a}" auto="false">
+                          <labels>
+                            <label description="Outstanding File Rejection Tasks" languagecode="1033" />
+                          </labels>
+                          <control id="Componentb4d0d12" uniqueid="{54b20dc4-7c60-2864-6437-a801b5bacab3}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>task</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>true</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>8</RecordsPerPage>
+                              <HeaderColorCode>#FEF7F5</HeaderColorCode>
+                              <ViewId>{0C8CB26D-9A6A-EA11-A811-000D3A3A76F4}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds>{6CF285AA-EB20-4277-925A-3E9735411FF0}</ViewIds>
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{9E6A8B06-6D14-46E6-BBF5-95C388C6EB7A}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                        <cell colspan="1" rowspan="12" showlabel="true" id="{da35a510-ff07-40bb-ad58-47ff1b68320a}" auto="false">
+                          <labels>
+                            <label description="Donors/Units with Contradictory Antigens" languagecode="1033" />
+                          </labels>
+                          <control id="Component7709718" uniqueid="{21427e81-b41b-8056-9e20-0b5e1b1760de}" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                            <parameters>
+                              <TargetEntityType>nhs_rarebloodsource</TargetEntityType>
+                              <ChartGridMode>Grid</ChartGridMode>
+                              <EnableQuickFind>true</EnableQuickFind>
+                              <EnableViewPicker>false</EnableViewPicker>
+                              <EnableJumpBar>true</EnableJumpBar>
+                              <RecordsPerPage>8</RecordsPerPage>
+                              <HeaderColorCode>#FEF7F5</HeaderColorCode>
+                              <ViewId>{03375819-996A-EA11-A811-000D3A3A76F4}</ViewId>
+                              <IsUserView>false</IsUserView>
+                              <ViewIds />
+                              <AutoExpand>Fixed</AutoExpand>
+                              <VisualizationId>{3BE73CA0-2E68-EA11-A811-000D3A3A7F02}</VisualizationId>
+                              <IsUserChart>false</IsUserChart>
+                              <EnableChartPicker>false</EnableChartPicker>
+                              <RelationshipName />
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                      <row />
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+        <controlDescriptions />
+        <DisplayConditions>
+          <Role Id="{B227D587-BC12-EA11-A811-000D3A86B423}" />
+          <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        </DisplayConditions>
+      </form>
+    </forms>
+  </FormXml>
+  <IntroducedVersion>0.0.0127.0</IntroducedVersion>
+  <IsTabletEnabled>0</IsTabletEnabled>
+</Dashboard>

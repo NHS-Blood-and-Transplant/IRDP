@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{ad5ffcc4-9f6a-ea11-a811-000d3a3a76f4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_panelcode" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_rarebloodsourceid">
+          <cell name="ownerid" width="100" />
+          <cell name="nhs_panelcode" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="nhs_contributorcode" width="100" />
+          <cell name="nhs_abotype" width="100" />
+          <cell name="nhs_lastreviewedon" width="100" />
+          <cell name="nhs_donorcount" width="100" />
+          <cell name="nhs_frozenunitcount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="nhs_rarebloodsource">
+          <attribute name="nhs_panelcode" />
+          <attribute name="nhs_frozenunitcount" />
+          <attribute name="nhs_contributorcode" />
+          <attribute name="nhs_abotype" />
+          <attribute name="nhs_donorcount" />
+          <attribute name="ownerid" />
+          <attribute name="nhs_lastreviewedon" />
+          <order attribute="nhs_lastreviewedon" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="or">
+              <condition attribute="nhs_lastreviewedon" operator="olderthan-x-months" value="6" />
+              <condition attribute="nhs_lastreviewedon" operator="null" />
+            </filter>
+          </filter>
+          <attribute name="nhs_rarebloodsourceid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0127.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Active Donors/Units Last Reviewed &gt; 6 Months Ago" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

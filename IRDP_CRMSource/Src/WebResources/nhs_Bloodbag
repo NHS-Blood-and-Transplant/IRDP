@@ -1,0 +1,19 @@
+<svg width="85" height="85" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="87" width="87" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="null" id="svg_1" d="m62.604025,48.67792l-39.72126,0c-2.05574,0 -3.75178,-1.2636 -3.75178,-2.835l0,-30.0132c0,-1.5588 1.69604,-2.8224 3.75178,-2.8224l39.71888,0c2.06289,0 3.73511,1.2654 3.73511,2.8224l0,30.0132c0.00238,1.5714 -1.66984,2.835 -3.73273,2.835zm-32.70602,25.9416l10.69318,0l-10.69318,0zm14.98331,0l10.69318,0l-10.69318,0zm14.98093,0l0.62649,0c2.0605,0 4.9971,-0.24381 6.65741,-0.97641c3.33254,-1.4652 4.56697,-4.36599 4.56697,-7.48899l0,-3.978l0,-16.326l0,-33.372l0,-3.978c0,-4.68 -5.0262,-9.50893 -11.21962,-8.478l-35.51688,0c-6.19342,-1.23712 -11.21962,3.798 -11.21962,8.478l0,3.978l0,33.372l0,16.326l0,3.978c0,2.925 1.34666,5.91317 4.3338,7.43057c1.78894,0.9144 4.56567,1.03483 6.88821,1.03483l0.62648,0l34.25676,0z"/>
+  <rect id="svg_4" height="12.783505" width="6.597938" y="72.361469" x="40.824743" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="null"/>
+  <rect id="svg_5" height="12.783505" width="6.597938" y="72.361476" x="51.958763" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="null"/>
+  <rect id="svg_6" height="12.783505" width="6.597938" y="72.361473" x="29.27835" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="null"/>
+  <rect stroke="null" id="svg_7" height="27.628866" width="8.453608" y="17.103737" x="40" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="null"/>
+  <rect stroke="null" id="svg_9" height="43.092784" width="8.041237" y="9.474871" x="17.525773" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="null"/>
+  <rect id="svg_10" height="43.505155" width="5.979381" y="9.268686" x="62.474227" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="null" fill="null"/>
+  <rect transform="rotate(90 44.22680282592774,30.91817092895508) " stroke="null" id="svg_11" height="27.628866" width="8.453608" y="17.103737" x="40" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="null"/>
+ </g>
+</svg>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{f8a3420a-23b6-4098-9742-46f505602172}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{68B71563-9089-4FEC-A596-1CB123650BA9}" IsUserDefined="0">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="ArticleContent" labelwidth="90" id="{c4314abc-de59-413d-bc6f-e78f6af89673}" columns="1" IsUserDefined="0" showlabel="true" showbar="false">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{081e7143-07a1-4465-98c9-b40d3b5f2afe}" showlabel="false" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="KnowledgeArticleTitle" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="title" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3328a8a7-f614-48d3-8ca7-f84c952bc11d}" showlabel="false" locklevel="0" colspan="1">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="KnowledgeArticleState" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{71b1a8ba-8a58-4803-b3c7-02263b91c102}" showlabel="false" auto="false" locklevel="0" rowspan="17" colspan="1">
+                        <labels>
+                          <label description="Content" languagecode="1033" />
+                        </labels>
+                        <control id="KnowledgeArticleContent" datafieldname="content" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" disabled="false" uniqueid="{77addfd5-e037-4c3c-b04f-e7c981dfc577}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{ab6e3235-0ae6-4661-917f-413ae035866f}" showlabel="false" auto="false" locklevel="0" rowspan="17" colspan="1" visible="false">
+                        <labels>
+                          <label description="Knowledge Article" languagecode="1033" />
+                        </labels>
+                        <control id="KnowledgeArticleId" datafieldname="knowledgearticleid" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" disabled="false"></control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{77addfd5-e037-4c3c-b04f-e7c981dfc577}">
+          <customControl formFactor="2" name="MscrmControls.KbContentControl.KbContentControl">
+            <parameters>
+              <record>knowledgearticleid</record>
+              <quickview>content</quickview>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.KbContentControl.KbContentControl">
+            <parameters>
+              <record>knowledgearticleid</record>
+              <quickview>content</quickview>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.KbContentControl.KbContentControl">
+            <parameters>
+              <record>knowledgearticleid</record>
+              <quickview>content</quickview>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Article Content" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form that displays the content of an Article." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

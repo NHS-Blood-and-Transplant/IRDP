@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_rarebloodsource.Assign.Hide" Location="Mscrm.Form.nhs_rarebloodsource.Assign" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_rarebloodsource.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.nhs_rarebloodsource.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_rarebloodsource.SendSelected.Hide" Location="Mscrm.Form.nhs_rarebloodsource.SendSelected" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_rarebloodsource.Assign.Hide" Location="Mscrm.HomepageGrid.nhs_rarebloodsource.Assign" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_rarebloodsource.Flows.RefreshCommandBar.Hide" Location="Mscrm.HomepageGrid.nhs_rarebloodsource.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_rarebloodsource.Send.Hide" Location="Mscrm.HomepageGrid.nhs_rarebloodsource.Send" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_rarebloodsource.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.nhs_rarebloodsource.AddExistingAssoc" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_rarebloodsource.AddExistingStandard.Hide" Location="Mscrm.SubGrid.nhs_rarebloodsource.AddExistingStandard" />
+    <CustomAction Id="nhs.nhs_rarebloodsource.resetLastReviewDate.Button.CustomAction" Location="Mscrm.Form.nhs_rarebloodsource.MainTab.Save.Controls._children" Sequence="15">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.nhs_rarebloodsource.resetLastReviewDate.Button.Alt" Command="nhs.nhs_rarebloodsource.resetLastReviewedDate.Command" Id="nhs.nhs_rarebloodsource.resetLastReviewDate.Button" Image32by32="/_imgs/ribbon/MarkAsComplete_32.png" Image16by16="/_imgs/ribbon/MarkAsComplete_16.png" LabelText="$LocLabels:nhs.nhs_rarebloodsource.resetLastReviewDate.Button.LabelText" Sequence="15" TemplateAlias="o1" ToolTipTitle="$LocLabels:nhs.nhs_rarebloodsource.resetLastReviewDate.Button.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.nhs_rarebloodsource.resetLastReviewDate.Button.ToolTipDescription" ModernImage="SaveAsComplete" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="nhs.nhs_rarebloodsource.resetLastReviewedDate.Command">
+      <EnableRules>
+        <EnableRule Id="nhs.nhs_rarebloodsource.resetReviewedDate.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="resetLastReviewDate" Library="$webresource:nhs_RareBloodSourceFormScript" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="nhs.nhs_rarebloodsource.resetReviewedDate.EnableRule">
+        <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" Default="false" InvertResult="false" />
+        <FormStateRule State="Existing" Default="false" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="nhs.nhs_rarebloodsource.resetLastReviewDate.Button.Alt">
+      <Titles>
+        <Title description="Reset Review Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_rarebloodsource.resetLastReviewDate.Button.LabelText">
+      <Titles>
+        <Title description="Reset Review Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_rarebloodsource.resetLastReviewDate.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Reset Review Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_rarebloodsource.resetLastReviewDate.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Reset Review Date" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

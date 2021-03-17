@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4bee583e-2090-4143-bee3-a15857ea4b02}</formid>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{f8f11e5a-a65c-4973-a0da-b0d06878f80b}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3601b4a1-d817-4616-946e-099509e8e4c3}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9415940a-e85e-5c72-6d4e-e6355ece6da2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Blood Group System" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_parentbloodgroupsystemid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nhs_parentbloodgroupsystemid" disabled="false" uniqueid="{d697c1a0-1a48-0343-b967-185cc1829789}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{8AB02C10-E250-4447-80B0-D13670C49F4F}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e167b96c-c181-4482-8bb4-d3deced2943f}">
+                        <labels>
+                          <label description="Name (Unicode)" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_nameunicode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_nameunicode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7836aebe-7453-ce39-4a6a-70be63c664b6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name (HTML)" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_namehtml" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_namehtml" disabled="false" uniqueid="{79111035-e691-71d4-e51c-e1686420b7e5}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{1dd3c1bf-dc8c-4ab6-ad84-076669d516c0}" columns="111">
+        <rows>
+          <row>
+            <cell id="{58941eba-c749-4dbd-87f7-6c6bf4fe081e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3322829f-3ee8-4aa9-b8a3-cb5603d46f22}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{81c0c720-a62c-2880-00ea-a5d18ea527eb}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="nhs_AntigenFormScript" libraryUniqueId="{6ddb2851-2c91-4e20-c06c-58ea55bb0783}" />
+        <Library name="nhs_IrdpCommon.js" libraryUniqueId="{b54049d4-7ac2-8324-3183-e02c0356a4c8}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="nhs_namehtml">
+          <Handlers>
+            <Handler functionName="validateHtmlName" libraryName="nhs_AntigenFormScript" handlerUniqueId="{a53ee2dd-3c93-1964-e7e5-03c15326a30d}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

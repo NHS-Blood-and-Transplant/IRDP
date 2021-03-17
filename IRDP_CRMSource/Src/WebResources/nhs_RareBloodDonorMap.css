@@ -1,0 +1,724 @@
+@charset "UTF-8";
+
+#myMap {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#noResultsFoundMessage {
+    display: inline-block;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 50px;
+    background-color: #FFF;
+    border: 5px solid #D00000;
+    border-radius: 15px;
+    font-family: "Segoe UI",Tahoma,Arial,sans-serif;
+    font-weight: bold;
+    color: #D00000;
+    line-height: 50px;
+}
+
+.RecordMasterTable {
+    border: 0;
+    width: 320px;
+    vertical-align: top;
+    font-family: "Segoe UI",Tahoma,Arial,sans-serif;
+    border-collapse: collapse;
+    color: #444;
+    border-radius: 9px;
+    pointer-events: auto;
+}
+
+.RecordTitle {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 4px;
+    font-size: 100%;
+    line-height: 28px;
+}
+
+.RecordBodyTable {
+    color: #444;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    width: 312px;
+    margin: 0 4px 4px 4px;
+    font-weight: normal;
+    border-radius: 0 0 5px 5px;
+    font-size: 100%;
+}
+
+.ActionPinShown {
+    display: Flex;
+}
+
+
+.RecordBodyTable thead tr:last-of-type td {
+    padding-bottom: 12px;
+}
+
+
+.infoBoxActionLink {
+    color: blue;
+    text-align: right;
+    text-decoration: underline;
+    padding: 0 8px 0 8px;
+    cursor: pointer;
+    float: right;
+    font-size: 90%;
+}
+
+.infoBoxActionLink:hover {
+    text-decoration: none;
+}
+
+.Cell_Label {
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+}
+
+.Cell_Description {
+    padding: 0 5px 0 10px;
+}
+
+
+svg.Icon.svgDisabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+svg.Icon {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.entityFormFieldLabel {
+    clear: left;
+    padding: 4px;
+    float: left;
+    display: inline;
+    width: 120px;
+}
+
+.mandatoryAsterisk {
+    display: inline;
+    clear: none;
+    font-weight: bold;
+    color: #D00000;
+}
+
+.entityFormFieldLabel_text {
+    display: inline-block;
+    clear: none;
+    max-width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.entityBoxFormFieldLabel {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+}
+
+.entityBoxFormFieldValue {
+    font-weight: bold;
+    display: inline-block;
+    white-space: pre-wrap;
+    vertical-align: bottom;
+    width: 200px;
+}
+
+.entityFormFieldBox {
+    padding: 4px;
+    clear: both;
+}
+
+.entityFormFieldValue {
+    padding: 4px;
+    margin-left: 128px;
+    font-weight: bold;
+}
+
+input.read-only {
+    background-color: #F3F1F1;
+}
+
+textarea {
+    font-family: "Segoe UI",Tahoma,Arial,sans-serif;
+}
+
+.TopMostRecordHeaderCell_Left {
+    border-radius: 9px 0 0 0;
+    padding-left: 4px;
+}
+
+.TopMostRecordHeaderCell_Right {
+    border-radius: 0 9px 0 0;
+    text-align: right;
+}
+
+.BottomRecordHeaderCell_Left_Collapsed {
+    border-radius: 0 0 0 9px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+
+.BottomRecordHeaderCell_Right_Collapsed {
+    border-radius: 0 0 9px 0;
+}
+
+.BottomRecordHeaderCell_Left_Expanded {
+    border-radius: 0;
+    padding-left: 4px;
+}
+
+.BottomRecordHeaderCell_Right_Expanded {
+    border-radius: 0;
+}
+
+.BottomRecordDetailCell {
+    border-radius: 0 0 9px 9px;
+}
+
+.customIconStyle0 {
+    fill: #FFFFFF;
+    stroke-width: 5;
+}
+
+.customIconStyle0:hover {
+    fill: #EEEEEE;
+}
+
+.customIconStyle1 {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+
+.customIconStyle2 {
+    fill: #444444;
+    pointer-events: none;
+}
+.customIconStyle2.svgDisabled {
+    fill: #C6C6C6;
+    pointer-events: none;
+}
+
+
+
+.customIconStyle3 {
+    fill: none;
+    stroke: #444444;
+    stroke-width: 1;
+    stroke-miterlimit: 10;
+    pointer-events: none;
+}
+
+.customIconStyle4.svgDisabled {
+    fill: #C6C6C6;
+    stroke: #C6C6C6;
+}
+
+.customIconStyle4 {
+    fill: #444444;
+    stroke: #444444;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    pointer-events: none;
+}
+
+.customIconActionPin {
+    fill: #111;
+    stroke-width: 1px;
+    stroke: #FFF;
+}
+
+.actionMenu {
+    width: 100%;
+    height: 37px;
+    font-weight: bold;
+    font-size: 100%;
+    line-height: 20px;
+    font-family: "Segoe UI",Tahoma,Arial,sans-serif;
+    color: #FFF;
+    text-align: center;
+    pointer-events: visible;
+    cursor: pointer;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+.actionButton:hover, disabledButton {
+    background-color: #888;
+}
+
+.actionButton {
+    display: inline-block;
+    padding-top: 5px;
+    background-color: #444;
+    border-radius: 5px;
+    border: 1px;
+    border-color: #FFF;
+    width: 59px;
+    height: 30px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.Hidden, .hideUnlessExperimenter, .hideUnlessContributor, .hideForCustomQuery {
+    display: none;
+}
+
+.invisible, .hideOnMobile {
+    visibility: hidden;
+}
+
+.optionsPaneOverlayLeft, .optionsPaneOverlayRight {
+    background-color: #FFF;
+    color: #000;
+    font-family: 'Segoe UI', 'San Francisco', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    width: 360px;
+    height: 100%;
+    z-index: 1100;
+    overflow: hidden;
+}
+
+
+.optionsPaneOverlayLeft {
+    left: -360px;
+}
+
+
+.optionsPaneOverlayRight {
+    right: -360px;
+}
+
+.optionsPaneHeader {
+    height: 40px;
+    background-color: #444;
+    padding: 8px 0px 0px 4px;
+    pointer-events: none;
+}
+
+.optionsPaneHeader_title {
+    float: left;
+    padding-top: 3px;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+    float: left;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.optionsPaneHeader_title {
+    float: left;
+}
+
+div.filterOptionSection {
+    display: none;
+}
+
+div.addFiltersButtonsSection {
+    float: left;
+    padding-top: 3px;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#bloodSourceCollection {
+    margin-bottom: 65px;
+}
+
+.rareBloodSource_detail {
+    flex-wrap: wrap;
+    display: flex;
+}
+.rareBloodSource_detail>div {
+    padding: 3px;
+}
+
+.detailsLabel {
+    font-weight: bold;
+    width:23%;
+}
+
+.detailsValue {
+    width:23%;
+}
+
+.filterOptionWhiteSVG {
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 2.5;
+    stroke-miterlimit: 10;
+    cursor: pointer;
+}
+
+.entityPopOutWhiteSVG {
+    fill: #FFF;
+    stroke: #FFF;
+    stroke-width: 1.5;
+    stroke-miterlimit: 10;
+    cursor: pointer;
+}
+
+.optionsPaneCollection {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: calc(100% - 48px);
+}
+
+.rareBloodSource_header {
+    width: 100%;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: stretch;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+.rareBloodSource_donor {
+    padding: 5px ;
+    background-color: #D00000;
+    width: 100%;
+}
+
+.rareBloodSource_product {
+    padding: 5px;
+    background-color: #0070c0;
+    min-width: 40%;
+    width: 100%;
+    white-space:pre-wrap
+}
+
+.filterOptionsSectionHeader {
+    background-color: #DDDDDD;
+    padding: 3px 4px 3px 4px;
+    clear: both;
+}
+
+.filterOptionDiv {
+    left: 9px;
+    padding: 2px 4px 2px 4px;
+    height: auto; 
+    min-height: 60px; 
+    overflow:auto;
+    width: 360px;
+    border: 1px solid #DDDDDD;
+}
+
+.filterOptionLegend {
+    float: left;
+    position: relative;
+    border-radius: 12px;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 8px;
+    margin-top: 15px;
+    border: 2px;
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    display: table;
+	display: inline;
+    border: 2px solid #D00000; 
+}
+
+.filterOptionLegend_Letter {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.filterOptionTextDiv {
+    float: left;
+    width:180px;
+}
+
+.filterControlDiv {
+    float: right;
+    height: auto;
+    position: relative;
+    padding-right: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.filterOptions_dropDownSelector{
+    width: 150px;
+}
+
+.filterOptions_button:disabled{
+    border: 2px solid #DDD;
+    color: #000;
+}
+
+.filterOptions_button:enabled{
+    border: 2px solid #0C8484;
+    background-color: #0C8484;
+    color: #FFF;
+}
+
+.filterOptions_button:enabled:hover{
+    font-weight: bold;
+}
+
+.filterOptions_button{
+    padding: 0;
+    width: 80px;
+    height: 27px;
+    border-radius: 14px;
+    border: 2px solid #0C8484;
+    font-size: 17px;
+    text-align: center;
+    vertical-align: middle;
+    fill: #FFF;
+}
+div#addNewFiltersButtons {
+    float: right;
+}
+div#addNewFiltersButtons > button.filterOptions_button {
+    width: 90px;
+    margin: 4px;
+}
+
+#detailsPaneContactHeader {
+    padding: 5px 0 5px 0;
+}
+#detailsPaneContactHeader_title, .filterOption_Label {
+    font-size: 17px;
+    padding: 0;
+    margin-top: 9px;
+    max-width: 340px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#contactDetailsCollection {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.detailsPaneContact{
+    width: 180px;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.filterOption_Description {
+    font-size: 12px;
+    margin-top: 0;
+    opacity: 0.4;
+}
+
+.FillColourAntigen {
+    background-color: #FFF;
+    color: #D00000; /*text colour*/
+    border-color: #D00000;
+}
+
+.FillColourRarity {
+    background-color: #D00000;
+    border-color: #D00000;
+    color: #FFFFFF;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0);
+    width: 120px;
+}
+
+
+/*Styling for custom check boxes*/
+.toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+.toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+input.toggle-round-flat + label {
+    padding: 2px;
+    width: 60px;
+    height: 20px;
+    background-color: #dddddd;
+    border-radius: 14px;
+    transition: background 0.4s;
+}
+
+input.toggle-round-flat + label:before,
+input.toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+input.toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 14px;
+    transition: background 0.4s;
+}
+
+input.toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 17px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    transition: margin 0.4s, background 0.4s;
+}
+
+input.toggle-round-flat:checked + label {
+    background-color: #0C8484;
+}
+
+input.toggle-round-flat:checked + label:after {
+    margin-left: 36px;
+    background-color: #0C8484;
+}
+
+/*background image for loading screen*/
+#indefiniteProgressOverlay {
+    background-image: url('data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*Trash icon to delete criteria lines*/
+.icon-trash {
+  width: 18px;
+  height: 34px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.icon-trash .trash-lid {
+  width: 62%;
+  height: 10%;
+  position: absolute;
+  left: 50%;
+  margin-left: -31%;
+  top: 10.5%;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg); 
+}
+
+.trash-lid, .trash-container {
+    background-color: #888;
+}
+
+.icon-trash .trash-lid:after {
+  content: "";
+  width: 26%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -13%;
+  margin-top: -10%;
+  background-color: inherit;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(-1deg); 
+}
+
+.icon-trash .trash-container {
+  width: 56%;
+  height: 65%;
+  position: absolute;
+  left: 50%;
+  margin-left: -28%;
+  bottom: 10%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.icon-trash .trash-container:after {
+  content: "";
+  width: 110%;
+  height: 12%;
+  position: absolute;
+  left: 50%;
+  margin-left: -55%;
+  top: 0;
+  background-color: inherit;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+
+.icon-trash .trash-line-1 {
+  width: 4%;
+  height: 50%;
+  position: absolute;
+  left: 38%;
+  margin-left: -2%;
+  bottom: 17%;
+  background-color: #FFF;
+}
+
+.icon-trash .trash-line-2 {
+  width: 4%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -2%;
+  bottom: 17%;
+  background-color: #FFF;
+}
+
+.icon-trash .trash-line-3 {
+  width: 4%;
+  height: 50%;
+  position: absolute;
+  left: 62%;
+  margin-left: -2%;
+  bottom: 17%;
+  background-color: #FFF;
+}
+
+.select2-results {
+    position: fixed;
+    width: inherit;
+}

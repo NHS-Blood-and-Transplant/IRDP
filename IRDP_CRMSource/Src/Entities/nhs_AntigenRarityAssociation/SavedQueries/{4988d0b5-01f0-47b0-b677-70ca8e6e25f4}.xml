@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{4988d0b5-01f0-47b0-b677-70ca8e6e25f4}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_antigenrarityassociationid">
+          <cell name="nhs_rarityid" width="100" />
+          <cell name="nhs_antigenid" width="100" />
+          <cell name="a_3345c55e1420ea11a810000d3a3a7a29.nhs_parentbloodgroupsystemid" width="100" disableSorting="1" />
+          <cell name="nhs_antigenresultraritycontext" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_antigenrarityassociation">
+          <order attribute="nhs_rarityid" descending="false" />
+          <attribute name="nhs_rarityid" />
+          <attribute name="nhs_antigenresultraritycontext" />
+          <attribute name="nhs_antigenid" />
+          <link-entity alias="a_3345c55e1420ea11a810000d3a3a7a29" name="nhs_antigen" from="nhs_antigenid" to="nhs_antigenid" link-type="outer" visible="false">
+            <attribute name="nhs_parentbloodgroupsystemid" />
+          </link-entity>
+          <attribute name="nhs_antigenrarityassociationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Antigen-Rarity Association Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

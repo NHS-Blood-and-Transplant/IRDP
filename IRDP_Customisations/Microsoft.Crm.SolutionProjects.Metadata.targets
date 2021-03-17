@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0" DefaultTargets="Debug" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask TaskName="Microsoft.Crm.SolutionProjects.MSBuild.GetWebResourcesFiles" AssemblyFile="$(ProjectDir)$(OutDir)Microsoft.Crm.SolutionProjects.MSBuild.dll" />
+  <UsingTask TaskName="Microsoft.Crm.SolutionProjects.MSBuild.PrepareWebResources" AssemblyFile="$(ProjectDir)$(OutDir)Microsoft.Crm.SolutionProjects.MSBuild.dll" />
+  <UsingTask TaskName="Microsoft.Crm.SolutionProjects.MSBuild.PreparePlugins" AssemblyFile="$(ProjectDir)$(OutDir)Microsoft.Crm.SolutionProjects.MSBuild.dll" />
+  <PropertyGroup>
+    <BeforeLocDir>BeforeLoc</BeforeLocDir>
+    <AfterLocDir>WebResTemp</AfterLocDir>
+    <WebResourcesDirectory>WebResources</WebResourcesDirectory>
+    <PluginsDirectory>PluginAssemblies</PluginsDirectory>
+    <RESXFile>$(IntermediateOutputPath)\$(BeforeLocDir)\Localize\Customizations.resx</RESXFile>
+    <LCLDirectory>$(MSBuildProjectDirectory)\..\Localize</LCLDirectory>
+
+    <!-- Backward compatibility: Use $(SolutionToolsDirectory) if SolutionPackagerDir is not defined. -->
+    <SolutionPackagerDir Condition="$(SolutionPackagerDir)==''">$(SolutionToolsDirectory)</SolutionPackagerDir>
+    <DefaultPackagerDir>$(VSCRMTFDEVTOOLSROOT)\SupportLibs\CRMSDKBin</DefaultPackagerDir>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PrepareMetadataFilesDependsOn>CleanMetadataProject</PrepareMetadataFilesDependsOn>
+  </PropertyGroup>
+
+  <Target Name="PrepareMetadataFiles" DependsOnTargets="$(PrepareMetadataFilesDependsOn)">
+
+    <MSBuild
+        Projects="@(ProjectReferenceWithConfiguration)"
+        Targets="_CopyWebResources"
+        BuildInParallel="$(BuildInParallel)"
+        Properties="%(ProjectReferenceWithConfiguration.SetConfiguration); %(ProjectReferenceWithConfiguration.SetPlatform);"
+        Condition="'@(ProjectReferenceWithConfiguration)' != '' and '%(ProjectReferenceWithConfiguration.ReferenceType)' == 'WebResource'"
+        ContinueOnError="!$(BuildingProject)"
+        RemoveProperties="%(ProjectReferenceWithConfiguration.GlobalPropertiesToRemove)">
+    </MSBuild>
+
+    <CreateItem Include="@(ProjectReferenceWithConfiguration)" Condition="'%(ProjectReferenceWithConfiguration.ReferenceType)' == 'Plugin'">
+      <Output TaskParameter="Include" ItemName="_PluginProjectReferences" />
+    </CreateItem>
+
+    <MSBuild
+        Projects="@(_PluginProjectReferences)"
+        Targets="GetTargetPath"
+        BuildInParallel="$(BuildInParallel)"
+        Properties="%(_PluginProjectReferences.SetConfiguration); %(_PluginProjectReferences.SetPlatform);"
+        ContinueOnError="!$(BuildingProject)"
+        RemoveProperties="%(_PluginProjectReferences.GlobalPropertiesToRemove)">
+      <Output TaskParameter="TargetOutputs" ItemName="_PluginProjectOutputs" />
+    </MSBuild>
+
+    <Message Text="Plugins copying with reference"></Message>
+    <Copy Condition="'@(_PluginProjectOutputs)' != ''"
+          SourceFiles="@(_PluginProjectOutputs)"
+          DestinationFiles="@(_PluginProjectReferences->'$(ProjectDir)%(PluginPackagePath)')" OverwriteReadOnlyFiles ='true' />   
+
+    <PreparePlugins PluginOutputFiles="@(_PluginProjectOutputs)" Plugins="@(Content)" OutputFile="$(ProjectDir)Other\Solution.xml" OutputFolder="$(ProjectDir)Other\" 
+PluginsDirectory="$(PluginsDirectory)">
+      <Output TaskParameter="FilesWritten" ItemName="FileWrites"/>
+    </PreparePlugins>
+
+    <Copy SourceFiles="@(Content)"
+          DestinationFiles="@(Content->'$(IntermediateOutputPath)\$(BeforeLocDir)\%(Identity)')">
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites"/>
+    </Copy>
+
+    <PrepareWebResources WebResourceConfigFiles="@(ResourceDefinition)" WebResources="@(Content)" SolutionFile="$(ProjectDir)Other\Solution.xml"
+                     OutputFile="$(IntermediateOutputPath)\WebResTemp\WebResources.xml" OutputFolder="$(IntermediateOutputPath)\WebResTemp"
+      WebResourcesDirectory="$(WebResourcesDirectory)">
+      <Output TaskParameter="FilesWritten" ItemName="FileWrites"/>
+    </PrepareWebResources>
+
+    <!-- Localization Start -->
+    <Message Text="Copying file to output directory. This is an integration point for web resource localization" />
+    <ItemGroup>
+      <BeforeLocalization Include="$(IntermediateOutputPath)\WebResTemp\**\*.*" />
+    </ItemGroup>
+
+    <!--Copying Newly modified solution.Xml into BeforeLocalization folder-->
+    <Copy SourceFiles="@(Content)"
+       DestinationFiles="@(Content->'$(IntermediateOutputPath)\$(BeforeLocDir)\%(Identity)')">
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites"/>
+    </Copy>
+
+    <Copy SourceFiles="@(BeforeLocalization)" DestinationFiles="$(IntermediateOutputPath)\$(BeforeLocDir)\$(WebResourcesDirectory)\%(RecursiveDir)%(Filename)%(Extension)">
+      <Output TaskParameter="CopiedFiles" ItemName="FileWrites"/>
+      <Output TaskParameter="CopiedFiles" ItemName="_CrmOutputPaths"/>
+    </Copy>
+
+    <!--<CallTarget Targets="LSBuild" />-->
+
+    <Warning Condition="'$(SolutionLocToolsDir)' == '' or !Exists('$(SolutionLocToolsDir)')" Text="Property 'SolutionLocToolsDir' is either not defined or not found, using default '$(DefaultLocToolsDir)'" />
+    <PropertyGroup>
+      <SolutionLocToolsDir Condition="$(SolutionLocToolsDir) == '' or !Exists('$(SolutionLocToolsDir)')">$(DefaultLocToolsDir)</SolutionLocToolsDir>
+      <!-- Backward compatibility: set to unmanaged build (0) by default -->
+      <!-- Commented below code to fix Build Issue when we build any Solution Type-->
+      <!--<SolutionType Condition="$(SolutionType)==''">0</SolutionType>-->
+    </PropertyGroup>
+
+    <Warning Condition="'$(SolutionPackagerDir)' == '' or !Exists('$(SolutionPackagerDir)')" Text="Property 'SolutionPackagerDir' is either not defined or not found, using default '$(DefaultPackagerDir)'" />
+    <PropertyGroup>
+      <SolutionPackagerDir Condition="$(SolutionPackagerDir) == '' or !Exists('$(SolutionPackagerDir)')">$(DefaultPackagerDir)</SolutionPackagerDir>
+    </PropertyGroup>
+
+    <!-- Run locTool merge to merge localization to customizations. -->
+    <!--<Exec Command="&quot;$(SolutionLocToolsDir)\LocTo1ol.exe&quot; -a:1 -i:&quot;$(IntermediateOutputPath)\$(BeforeLocDir)&quot; -o:&quot;$(IntermediateOutputPath)\
+
+$(AfterLocDir)&quot; -r:&quot;$(IntermediateOutputPath)\$(BeforeLocDir)\Localize\Customizations.resx&quot;" />-->
+
+    <!-- Unmanaged solution -->
+    <Exec Condition="'$(SolutionType)' == '0' or '$(SolutionType)' == '2'"
+		Command="REM SET AssemblyVersionDefinitionFile=$(AssemblyVersionDefinitionFile)
+          REM SET AssemblyVersionName=$(AssemblyVersionName)
+          &quot;$(SolutionPackagerDir)\SolutionPackager.exe&quot; -a:pack -z:&quot;$(OutDir)$(TargetName).zip&quot; -f:&quot;$(IntermediateOutputPath)\$(BeforeLocDir)&quot;" />
+
+    <!-- Managed solution -->
+    <Exec Condition="'$(SolutionType)' == '1' or '$(SolutionType)' == '2'"
+   Command="REM SET AssemblyVersionDefinitionFile=$(AssemblyVersionDefinitionFile)
+          REM SET AssemblyVersionName=$(AssemblyVersionName)
+          &quot;$(SolutionPackagerDir)\SolutionPackager.exe&quot; -a:pack -z:&quot;$(OutDir)$(TargetName)_managed.zip&quot; -f:&quot;$(IntermediateOutputPath)\$(BeforeLocDir)&quot;" />
+
+    <ItemGroup>
+      <FileWrites Include="$(OutDir)\$(TargetName).zip" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="CleanMetadataProject">
+    <RemoveDir Directories="$(IntermediateOutputPath)\$(BeforeLocDir)" />
+    <RemoveDir Directories="$(IntermediateOutputPath)\$(AfterLocDir)" />
+  </Target>
+
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!--<Import Project="$(CustomExtendedTargetsPath)\Microsoft\Crm\Microsoft.Crm.Localization.targets" />-->
+  <PropertyGroup>
+    <CoreBuildDependsOn>$(CoreBuildDependsOn);PrepareMetadataFiles</CoreBuildDependsOn>
+    <CoreCleanDependsOn>$(CoreCleanDependsOn);CleanMetadataProject</CoreCleanDependsOn>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f979445a-3e44-4643-8d6d-333c7352a707}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_antigensourceassociationid">
+          <cell name="a_8506ab60ef11ea11a811000d3a86b423.nhs_nameunicode" width="150" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="nhs_antigenresult" width="100" />
+          <cell name="statuscode" width="100" imageproviderfunctionname="DisplayContradictionIcon" imageproviderwebresource="$webresource:nhs_IrdpCommon.js" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_antigensourceassociation">
+          <order attribute="statuscode" descending="true" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="nhs_antigenresult" />
+          <link-entity alias="a_8506ab60ef11ea11a811000d3a86b423" name="nhs_antigen" from="nhs_antigenid" to="nhs_antigenid" link-type="outer" visible="false">
+            <attribute name="nhs_nameunicode" />
+          </link-entity>
+          <attribute name="statuscode" />
+          <attribute name="nhs_antigensourceassociationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Antigen-Source Associations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

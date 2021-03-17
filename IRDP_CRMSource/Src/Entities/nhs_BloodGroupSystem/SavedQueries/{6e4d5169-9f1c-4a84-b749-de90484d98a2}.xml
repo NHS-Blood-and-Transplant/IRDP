@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6e4d5169-9f1c-4a84-b749-de90484d98a2}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_bloodgroupsystemid">
+          <cell name="nhs_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_bloodgroupsystem">
+          <attribute name="nhs_bloodgroupsystemid" />
+          <attribute name="nhs_name" />
+          <attribute name="createdon" />
+          <order attribute="nhs_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="nhs_name" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Blood Group Systems" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

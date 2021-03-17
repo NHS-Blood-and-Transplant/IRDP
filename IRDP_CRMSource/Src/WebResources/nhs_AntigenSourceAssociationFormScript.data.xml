@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{c40bf8c3-7e43-ea11-a812-000d3a3a76f4}</WebResourceId>
+  <Name>nhs_AntigenSourceAssociationFormScript</Name>
+  <DisplayName>nhs_AntigenSourceAssociationFormScript</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.0.0022.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/nhs_AntigenSourceAssociationFormScriptC40BF8C3-7E43-EA11-A812-000D3A3A76F4</FileName>
+</WebResource>

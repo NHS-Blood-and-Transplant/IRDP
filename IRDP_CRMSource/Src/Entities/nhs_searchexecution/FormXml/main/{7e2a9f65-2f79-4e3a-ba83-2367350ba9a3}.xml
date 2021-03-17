@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7e2a9f65-2f79-4e3a-ba83-2367350ba9a3}</formid>
+    <IntroducedVersion>0.0.0065.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{e54c3134-0b7b-4ee9-a838-416f9e88a59e}" IsUserDefined="1" labelid="{bf373c5a-f39e-44ac-b16b-683f95edc98e}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f660711f-4c15-4529-967a-420e4cd1f55b}" labelid="{e79c5bfe-6b40-4e83-8cb6-6af2f905e5b9}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d285257a-993e-49fe-89d1-765ee70d08e5}" labelid="{90a7ef0d-f4ed-4cbf-8176-408fe2cf5a05}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_name" uniqueid="{9e9b5a1b-652b-4217-8457-d12e01978ad4}" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dd44fc7e-d895-49fe-925f-4b1124af4fe5}" labelid="{798e34c7-f6f3-4314-89c5-5deaa0d1e7ee}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{b8c89c02-d736-b3c5-8ee6-96b01b3baebc}" disabled="true">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{e54c3134-0b7b-4ee9-a838-416f9e88a59e}_section_2" showlabel="true" showbar="false" locklevel="0" id="{cb27c10e-2535-3b5e-d855-a2d5b2a5dcd0}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{8ff54a17-c869-4cba-87c3-f93b888b526e}">
+                  <labels>
+                    <label description="Search Critieria" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e90ea7b8-6163-940e-2e5b-564b14915245}" showlabel="true" locklevel="0" labelid="{b558bf4a-11dc-409c-9125-c579b7774b81}">
+                        <labels>
+                          <label description="ABO Criteria" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_criteria_abo" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_criteria_abo" disabled="true" uniqueid="{13bc69b3-58b2-5846-307d-1578569b4d3c}" />
+                      </cell>
+                      <cell id="{15333eb3-866d-6c9c-1066-00e221944b45}" showlabel="true" locklevel="0" labelid="{3b47ef1d-db3f-4e96-9cc0-9c328aef6d75}">
+                        <labels>
+                          <label description="Antigens Present" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_criteria_antigenspresent" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_criteria_antigenspresent" disabled="true" uniqueid="{2ea35807-d246-9ca1-e1e4-88c2e23bc36e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e8ec8ae-260a-3ad1-8d5e-42ae3cdb60de}" showlabel="true" locklevel="0" labelid="{fdb52c82-1adb-43e5-99b9-fa228d94e1fa}">
+                        <labels>
+                          <label description="Rarities" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_criteria_rarities" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_criteria_rarities" disabled="true" uniqueid="{80a246a5-3b93-a528-675b-c6e51663d922}" />
+                      </cell>
+                      <cell id="{8d257a27-3dbd-2ad6-5048-9dc4cc52548d}" showlabel="true" locklevel="0" labelid="{a77d22e7-345d-4bcb-9c69-4d13cd04ebf9}">
+                        <labels>
+                          <label description="Antigens Absent" languagecode="1033" />
+                        </labels>
+                        <control id="nhs_criteria_antigensabsent" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nhs_criteria_antigensabsent" disabled="true" uniqueid="{168cb293-4269-d4a7-ad54-5a3e3d322b87}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Main Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

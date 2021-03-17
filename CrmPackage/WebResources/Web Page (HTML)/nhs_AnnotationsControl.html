@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Annotations List and Uploader</title>
+    <style> 
+        #existingAnnotations {
+            font-family: SegoeUI, "Segoe UI";
+            font-size: 12px;
+            width: 100%;
+            color: rgb(51, 51, 51);
+        }
+
+        .existingAnnotation {
+            padding: 5px;
+        }
+        .existingAnnotation:hover {
+            background-color: rgb(216,216,216);
+        }
+
+        .existingAnnotation_fileName {
+            font-family: 'SegoeUI-Semibold', 'Segoe UI Semibold', 'Segoe UI Regular', 'Segoe UI';
+            font-size: 14px;
+        }
+
+        .existingAnnotation_metadata {
+
+        }
+
+        div.heading {
+            font-family: "Segoe UI Regular", SegoeUI, "Segoe UI";
+            font-size: 17px;
+            color: rgb(51, 51, 51);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #FileProgressionBar {
+            width: 100%;
+            height: 10px;
+            background-color: grey;
+        }
+
+        #FileProgress {
+            width: 0%;
+            height: 10px;
+            background-color: #4CAF50;
+        }
+
+        #FileRowParseProgressionBar {
+            width: 100%;
+            height: 10px;
+            background-color: grey;
+        }
+
+        #FileRowParseProgress {
+            width: 0%;
+            height: 10px;
+            background-color: #4CAF50;
+        }
+
+        #MessageDescription img {
+            height: 14px;
+            width: 17px;
+        }
+
+
+        #ProgressBar span{
+            font-family: "Segoe UI Regular", SegoeUI, "Segoe UI";
+            font-size : 12px;
+        }
+
+    </style>
+
+</head>
+<body style="display:none">
+    <div class="heading">Import Bulk Update</div>
+    <input type="file" id="newAnnotation" name="newAnnotation">
+    <input type="submit" style="display: none"><br />
+
+    <div id="ProgressBar" style="display: none">
+        <div id="FileStepsProgression">
+            <div id="FileStepsTitle">
+                <span>Uploading File (Step 0 out of 4 Completed)</span>
+            </div>
+            <div id="FileProgressionBar">
+                <div id="FileProgress">
+                </div>
+            </div>
+        </div><br />
+        <div id="FileParsingRowsProgression">
+            <div id="FileParsingRowTitle">
+                <span>Parsing Rows (0 of 0)</span>
+            </div>
+            <div id="FileRowParseProgressionBar">
+                <div id="FileRowParseProgress">
+                </div><br />
+            </div>
+        </div>
+        <div id="FileImportMessageProgression">
+            <div id="MessageDescription">
+                <img id="messageImage" src="" />
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="heading">Previous Uploads</div>
+    <div id="existingAnnotations"></div>
+    <script type="text/javascript" src="ClientGlobalContext.js.aspx"></script>
+    <script type='text/javascript' src='nhs_jQuery3.4.1.js'></script>
+    <script type='text/javascript' src='nhs_IrdpCommon.js'></script>
+    <script type='text/javascript' src='nhs_FileSaver'></script>
+    <script type='text/javascript' src='nhs_AnnotationsControl.js'></script>
+</body>
+</html>

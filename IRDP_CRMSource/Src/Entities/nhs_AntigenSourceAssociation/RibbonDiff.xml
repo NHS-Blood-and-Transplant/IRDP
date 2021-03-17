@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_antigensourceassociation.Activate.Hide" Location="Mscrm.Form.nhs_antigensourceassociation.Activate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_antigensourceassociation.Deactivate.Hide" Location="Mscrm.Form.nhs_antigensourceassociation.Deactivate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.nhs_antigensourceassociation.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.nhs_antigensourceassociation.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_antigensourceassociation.Activate.Hide" Location="Mscrm.HomepageGrid.nhs_antigensourceassociation.Activate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_antigensourceassociation.Deactivate.Hide" Location="Mscrm.HomepageGrid.nhs_antigensourceassociation.Deactivate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.nhs_antigensourceassociation.Flows.RefreshCommandBar.Hide" Location="Mscrm.HomepageGrid.nhs_antigensourceassociation.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_antigensourceassociation.Activate.Hide" Location="Mscrm.SubGrid.nhs_antigensourceassociation.Activate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_antigensourceassociation.AddExistingAssoc.Hide" Location="Mscrm.SubGrid.nhs_antigensourceassociation.AddExistingAssoc" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_antigensourceassociation.AddExistingStandard.Hide" Location="Mscrm.SubGrid.nhs_antigensourceassociation.AddExistingStandard" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_antigensourceassociation.Deactivate.Hide" Location="Mscrm.SubGrid.nhs_antigensourceassociation.Deactivate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.SubGrid.nhs_antigensourceassociation.Remove.Hide" Location="Mscrm.SubGrid.nhs_antigensourceassociation.Remove" />
+    <CustomAction Id="nhs.nhs_antigensourceassociation.RemoveButton.Form.CustomAction" Location="Mscrm.Form.nhs_antigensourceassociation.MainTab.Save.Controls._children" Sequence="65">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Form.Alt" Command="nhs.nhs_antigensourceassociation.RemoveForm" CommandValueId="" Id="nhs.nhs_antigensourceassociation.RemoveButton.Form" Image32by32="/_imgs/Workplace/remove_32.png" Image16by16="/_imgs/ribbon/Delete_16.png" LabelText="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Form.LabelText" Sequence="65" TemplateAlias="o2" ToolTipTitle="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Form.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Form.ToolTipDescription" ModernImage="Remove" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="nhs.nhs_antigensourceassociation.RemoveButton.Home.CustomAction" Location="Mscrm.HomepageGrid.nhs_antigensourceassociation.MainTab.Management.Controls._children" Sequence="45">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Home.Alt" Command="nhs.nhs_antigensourceassociation.RemoveSubgrid" Id="nhs.nhs_antigensourceassociation.RemoveButton.Home" Image32by32="/_imgs/Workplace/remove_32.png" Image16by16="/_imgs/ribbon/Delete_16.png" LabelText="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Home.LabelText" Sequence="45" TemplateAlias="o2" ToolTipTitle="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Home.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.Home.ToolTipDescription" ModernImage="Remove" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.CustomAction" Location="Mscrm.SubGrid.nhs_antigensourceassociation.MainTab.Management.Controls._children" Sequence="75">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.Alt" Command="nhs.nhs_antigensourceassociation.RemoveSubgrid" Id="nhs.nhs_antigensourceassociation.RemoveButton.SubGrid" Image32by32="/_imgs/Workplace/remove_32.png" Image16by16="/_imgs/ribbon/Delete_16.png" LabelText="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.LabelText" Sequence="75" TemplateAlias="o2" ToolTipTitle="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.ToolTipDescription" ModernImage="Remove" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="nhs.nhs_antigensourceassociation.RemoveForm">
+      <EnableRules />
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWritePrimary" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="validateAntigenRemoval" Library="$webresource:nhs_AntigenSourceAssociationFormScript">
+          <CrmParameter Value="PrimaryItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="nhs.nhs_antigensourceassociation.RemoveSubgrid">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+        <EnableRule Id="nhs.nhs_antigensourceassociation.PrimaryEntityis_nhs_RareBloodSource" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWritePrimary" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="validateAntigenRemoval" Library="$webresource:nhs_AntigenSourceAssociationFormScript">
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanWritePrimary">
+        <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.CanWriteSelected.nhs_antigensourceassociation">
+        <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Local" AppliesTo="SelectedEntity" EntityName="nhs_antigensourceassociation" Default="false" InvertResult="false" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsActive">
+        <FormStateRule State="Existing" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsNotActivity">
+        <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="IsActivity" PropertyValue="false" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.SelectedEntityHasStatecode.nhs_antigensourceassociation">
+        <EntityPropertyRule AppliesTo="SelectedEntity" PropertyName="HasStateCode" PropertyValue="true" Default="false" InvertResult="false" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.CanWritePrimary">
+        <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.SelectionCountAtLeastOne">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="1" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.VisualizationPaneNotMaximized">
+        <OrRule>
+          <Or>
+            <CommandClientTypeRule Type="Modern" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.Charts.disableButtonsWhenChartMaximized" Library="$webresource:Main_system_library.js">
+              <CrmParameter Value="SelectedControl" />
+            </CustomRule>
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="nhs.nhs_antigensourceassociation.PrimaryEntityis_nhs_RareBloodSource">
+        <EntityRule EntityName="nhs_rarebloodsource" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Form.Alt">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Form.LabelText">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Form.ToolTipDescription">
+      <Titles>
+        <Title description="Remove these association" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Form.ToolTipTitle">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Home.Alt">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Home.LabelText">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Home.ToolTipDescription">
+      <Titles>
+        <Title description="Remove these association" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.Home.ToolTipTitle">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.Alt">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.LabelText">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.ToolTipDescription">
+      <Titles>
+        <Title description="Remove these association" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.nhs_antigensourceassociation.RemoveButton.SubGrid.ToolTipTitle">
+      <Titles>
+        <Title description="Remove" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

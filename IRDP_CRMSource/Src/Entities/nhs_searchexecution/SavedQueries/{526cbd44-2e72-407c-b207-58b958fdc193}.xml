@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{526cbd44-2e72-407c-b207-58b958fdc193}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_searchexecutionid">
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+          <cell name="nhs_onbehalfofteam" width="100" />
+          <cell name="nhs_criteria_abo" width="100" />
+          <cell name="nhs_criteria_antigensabsent" width="100" />
+          <cell name="nhs_criteria_antigenspresent" width="100" />
+          <cell name="nhs_criteria_rarities" width="100" />
+          <cell name="nhs_isduplicate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="nhs_searchexecution">
+          <attribute name="createdon" />
+          <attribute name="nhs_criteria_rarities" />
+          <attribute name="createdby" />
+          <attribute name="nhs_criteria_antigenspresent" />
+          <attribute name="nhs_criteria_antigensabsent" />
+          <attribute name="nhs_criteria_abo" />
+          <attribute name="nhs_isduplicate" />
+          <order attribute="createdon" descending="true" />
+          <attribute name="nhs_onbehalfofteam" />
+          <attribute name="nhs_searchexecutionid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0065.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Search Execution Records" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

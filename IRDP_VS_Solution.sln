@@ -1,0 +1,170 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{88A30576-7583-4F75-8136-5EFD2C14ADFF}") = "CrmPackage", "CrmPackage\CrmPackage.csproj", "{9A222C05-188E-42AC-8A70-4B7C35F4230B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A6DD386-B78D-4D43-90FD-AE68706B2025} = {8A6DD386-B78D-4D43-90FD-AE68706B2025}
+		{846E3593-AE32-47B6-896E-E1910AD6EF3E} = {846E3593-AE32-47B6-896E-E1910AD6EF3E}
+		{914B379B-68E6-4450-99CD-55A9A0AEAA9A} = {914B379B-68E6-4450-99CD-55A9A0AEAA9A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRDP_Customisations", "IRDP_Customisations\IRDP_Customisations.csproj", "{8A6DD386-B78D-4D43-90FD-AE68706B2025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRDP_Workflows", "IRDP_Workflows\IRDP_Workflows.csproj", "{914B379B-68E6-4450-99CD-55A9A0AEAA9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRDP_CRMSource", "IRDP_CRMSource\IRDP_CRMSource.csproj", "{6CDE54E3-CCC5-4E1E-96AF-DF4679F408BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHSBT.IRDP.Plugins", "NHSBT.IRDP.Plugins\NHSBT.IRDP.Plugins.csproj", "{846E3593-AE32-47B6-896E-E1910AD6EF3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A222C05-188E-42AC-8A70-4B7C35F4230B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A222C05-188E-42AC-8A70-4B7C35F4230B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A222C05-188E-42AC-8A70-4B7C35F4230B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9A222C05-188E-42AC-8A70-4B7C35F4230B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A222C05-188E-42AC-8A70-4B7C35F4230B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A222C05-188E-42AC-8A70-4B7C35F4230B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8A6DD386-B78D-4D43-90FD-AE68706B2025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6DD386-B78D-4D43-90FD-AE68706B2025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6DD386-B78D-4D43-90FD-AE68706B2025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6DD386-B78D-4D43-90FD-AE68706B2025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914B379B-68E6-4450-99CD-55A9A0AEAA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914B379B-68E6-4450-99CD-55A9A0AEAA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914B379B-68E6-4450-99CD-55A9A0AEAA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914B379B-68E6-4450-99CD-55A9A0AEAA9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDE54E3-CCC5-4E1E-96AF-DF4679F408BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDE54E3-CCC5-4E1E-96AF-DF4679F408BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDE54E3-CCC5-4E1E-96AF-DF4679F408BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDE54E3-CCC5-4E1E-96AF-DF4679F408BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{846E3593-AE32-47B6-896E-E1910AD6EF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846E3593-AE32-47B6-896E-E1910AD6EF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846E3593-AE32-47B6-896E-E1910AD6EF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846E3593-AE32-47B6-896E-E1910AD6EF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD39749D-8AAC-4D3F-916B-415CFAD397D0}
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+	GlobalSection(CRMSolutionProperties) = preSolution
+		SolutionIsBoundToCRM = True
+	EndGlobalSection
+EndGlobal

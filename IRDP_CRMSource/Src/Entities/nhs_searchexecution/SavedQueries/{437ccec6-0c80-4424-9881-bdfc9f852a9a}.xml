@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{437ccec6-0c80-4424-9881-bdfc9f852a9a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_searchexecutionid">
+          <cell name="createdon" width="125" />
+          <cell name="createdby" width="100" />
+          <cell name="nhs_name" width="300" />
+          <cell name="nhs_criteria_abo" width="100" />
+          <cell name="nhs_criteria_antigensabsent" width="100" />
+          <cell name="nhs_criteria_antigenspresent" width="100" />
+          <cell name="nhs_criteria_rarities" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_searchexecution">
+          <attribute name="nhs_name" />
+          <attribute name="createdon" />
+          <order attribute="nhs_name" descending="false" />
+          <attribute name="nhs_criteria_rarities" />
+          <attribute name="nhs_criteria_antigenspresent" />
+          <attribute name="nhs_criteria_antigensabsent" />
+          <attribute name="nhs_criteria_abo" />
+          <attribute name="createdby" />
+          <attribute name="nhs_searchexecutionid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0065.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Search Execution Record Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

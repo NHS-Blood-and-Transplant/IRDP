@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{906f0cfc-0c48-ea11-a812-000d3a3a76f4}</WebResourceId>
+  <Name>nhs_RareDonorMap.html</Name>
+  <DisplayName>nhs_RareDonorMap.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>0.0.0041.0</IntroducedVersion>
+  <IsEnabledForMobileClient>1</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/nhs_RareDonorMaphtml906F0CFC-0C48-EA11-A812-000D3A3A76F4</FileName>
+</WebResource>

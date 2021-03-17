@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.21022.133" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>IRDP</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="IRDP" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Upgrade of IRDP" languagecode="1033" />
+    </Descriptions>
+    <Version>0.0.0232.0</Version>
+    <Managed>2</Managed>
+    <Publisher>
+      <UniqueName>NhsBloodAndTransplant</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="NHS Blood and Transplant" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true">
+      </EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true">
+      </SupportingWebsiteUrl>
+      <CustomizationPrefix>nhs</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>12713</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true">
+          </City>
+          <County xsi:nil="true">
+          </County>
+          <Country xsi:nil="true">
+          </Country>
+          <Fax xsi:nil="true">
+          </Fax>
+          <FreightTermsCode xsi:nil="true">
+          </FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true">
+          </ImportSequenceNumber>
+          <Latitude xsi:nil="true">
+          </Latitude>
+          <Line1 xsi:nil="true">
+          </Line1>
+          <Line2 xsi:nil="true">
+          </Line2>
+          <Line3 xsi:nil="true">
+          </Line3>
+          <Longitude xsi:nil="true">
+          </Longitude>
+          <Name xsi:nil="true">
+          </Name>
+          <PostalCode xsi:nil="true">
+          </PostalCode>
+          <PostOfficeBox xsi:nil="true">
+          </PostOfficeBox>
+          <PrimaryContactName xsi:nil="true">
+          </PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true">
+          </StateOrProvince>
+          <Telephone1 xsi:nil="true">
+          </Telephone1>
+          <Telephone2 xsi:nil="true">
+          </Telephone2>
+          <Telephone3 xsi:nil="true">
+          </Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true">
+          </TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true">
+          </UPSZone>
+          <UTCOffset xsi:nil="true">
+          </UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true">
+          </UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true">
+          </City>
+          <County xsi:nil="true">
+          </County>
+          <Country xsi:nil="true">
+          </Country>
+          <Fax xsi:nil="true">
+          </Fax>
+          <FreightTermsCode xsi:nil="true">
+          </FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true">
+          </ImportSequenceNumber>
+          <Latitude xsi:nil="true">
+          </Latitude>
+          <Line1 xsi:nil="true">
+          </Line1>
+          <Line2 xsi:nil="true">
+          </Line2>
+          <Line3 xsi:nil="true">
+          </Line3>
+          <Longitude xsi:nil="true">
+          </Longitude>
+          <Name xsi:nil="true">
+          </Name>
+          <PostalCode xsi:nil="true">
+          </PostalCode>
+          <PostOfficeBox xsi:nil="true">
+          </PostOfficeBox>
+          <PrimaryContactName xsi:nil="true">
+          </PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true">
+          </StateOrProvince>
+          <Telephone1 xsi:nil="true">
+          </Telephone1>
+          <Telephone2 xsi:nil="true">
+          </Telephone2>
+          <Telephone3 xsi:nil="true">
+          </Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true">
+          </TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true">
+          </UPSZone>
+          <UTCOffset xsi:nil="true">
+          </UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true">
+          </UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="knowledgearticle" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_antigen" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_antigenrarityassociation" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_antigensourceassociation" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_bloodgroupsystem" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_configentity" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_country" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_rarebloodsource" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_rarebloodsourceimport" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_rarity" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_raritysourceassociation" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_searchexecution" behavior="0" />
+      <RootComponent type="1" schemaName="nhs_usersupplementaryfields" behavior="0" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="1" schemaName="task" behavior="1" />
+      <RootComponent type="1" schemaName="team" behavior="0" />
+      <RootComponent type="9" schemaName="nhs_abosubtypes" behavior="0" />
+      <RootComponent type="9" schemaName="nhs_antigenresultraritycontext" behavior="0" />
+      <RootComponent type="9" schemaName="nhs_antigenresultsourcecontext" behavior="0" />
+      <RootComponent type="20" id="{91c987be-ba12-ea11-a811-000d3a86b423}" behavior="0" />
+      <RootComponent type="20" id="{b227d587-bc12-ea11-a811-000d3a86b423}" behavior="0" />
+      <RootComponent type="20" id="{b6d9a5de-b412-ea11-a811-000d3a86b423}" behavior="0" />
+      <RootComponent type="20" id="{d986fdc5-ae12-ea11-a811-000d3a86b423}" behavior="0" />
+      <RootComponent type="29" id="{06333906-2e19-4d49-b75a-842ac1b4f819}" behavior="0" />
+      <RootComponent type="29" id="{0a966c4a-919f-4817-885a-550ae2c438de}" behavior="0" />
+      <RootComponent type="29" id="{5e0247f4-d476-4fa1-80c2-de12c99dcc0b}" behavior="0" />
+      <RootComponent type="29" id="{8813d2c9-0330-424f-aa38-8a251d9ed63a}" behavior="0" />
+      <RootComponent type="29" id="{884d47d3-1283-4188-8d0f-825f1b87988d}" behavior="0" />
+      <RootComponent type="29" id="{9ce58b7e-9c37-ea11-a813-000d3a3a7f02}" behavior="0" />
+      <RootComponent type="29" id="{d0825c5e-20cc-ea11-a812-000d3a3a7f02}" behavior="0" />
+      <RootComponent type="29" id="{e7d43b11-bc4a-499b-9fb1-77de4b9c87b4}" behavior="0" />
+      <RootComponent type="29" id="{e8d1bc87-43de-4072-9052-8d1b6f18d870}" behavior="0" />
+      <RootComponent type="29" id="{ed0c3b22-bd4e-4633-a3b1-bc65e4d1c02c}" behavior="0" />
+      <RootComponent type="50" schemaName=":RibbonDiffXml" behavior="0" />
+      <RootComponent type="60" id="{0beb9f8a-ca1b-4daa-9460-ce9404cce8ae}" behavior="0" />
+      <RootComponent type="60" id="{0ff3c217-0c41-407d-acc4-1fe45e643a8b}" behavior="0" />
+      <RootComponent type="60" id="{1262fac7-7992-45e5-9edc-1b6cc392941f}" behavior="0" />
+      <RootComponent type="60" id="{1d57e8ad-fd00-42bb-8634-38fe8aad6780}" behavior="0" />
+      <RootComponent type="60" id="{22aeee41-2e06-4781-b53e-c6346dfdea99}" behavior="0" />
+      <RootComponent type="60" id="{2854ef23-4e68-ea11-a811-000d3a3a7f02}" behavior="0" />
+      <RootComponent type="60" id="{286e23e8-d716-491e-a8e9-5a9879d3370b}" behavior="0" />
+      <RootComponent type="60" id="{3926c947-26d1-419e-a7ea-864b5afa845f}" behavior="0" />
+      <RootComponent type="60" id="{3fd1ef9c-9e6a-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="60" id="{4651f199-0bed-415c-b13c-621a8c2bb25b}" behavior="0" />
+      <RootComponent type="60" id="{4bee583e-2090-4143-bee3-a15857ea4b02}" behavior="0" />
+      <RootComponent type="60" id="{5075a5fe-2d0d-455e-8f20-d387650089d1}" behavior="0" />
+      <RootComponent type="60" id="{5818a5f9-86be-48c9-af6e-a7dd35a1f848}" behavior="0" />
+      <RootComponent type="60" id="{5f276dcf-2749-4b9b-a369-11abd52d1351}" behavior="0" />
+      <RootComponent type="60" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" behavior="0" />
+      <RootComponent type="60" id="{67c3fe4a-8572-4eb7-9dc9-095699da58d0}" behavior="0" />
+      <RootComponent type="60" id="{71d97865-b124-4365-9a84-0021bba49778}" behavior="0" />
+      <RootComponent type="60" id="{7ba7fac1-1418-4335-935f-f7f8dfd73fcc}" behavior="0" />
+      <RootComponent type="60" id="{7e2a9f65-2f79-4e3a-ba83-2367350ba9a3}" behavior="0" />
+      <RootComponent type="60" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" behavior="0" />
+      <RootComponent type="60" id="{86c952aa-a512-46bb-b8a1-879ec09231f2}" behavior="0" />
+      <RootComponent type="60" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" behavior="0" />
+      <RootComponent type="60" id="{9a8942c6-4de6-49d1-992a-4bead0c7d598}" behavior="0" />
+      <RootComponent type="60" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" behavior="0" />
+      <RootComponent type="60" id="{b053a39a-041a-4356-acef-ddf00182762b}" behavior="0" />
+      <RootComponent type="60" id="{b3df6289-78fa-4716-803a-e526acb113d2}" behavior="0" />
+      <RootComponent type="60" id="{c2cd9e55-d4b4-4b55-9951-16ead79643e5}" />
+      <RootComponent type="60" id="{cb430327-bcc1-416d-959d-db7592e685af}" behavior="0" />
+      <RootComponent type="60" id="{faa94f83-5816-446c-b8a7-d35f65805e03}" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_AccountFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_AnnotationsControl.html" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_AnnotationsControl.js" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_AntigenFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_AntigenSourceAssociationFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_Bloodbag" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_Bloodbagmin" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_BloodGroupSystemFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_ContactFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_Earth" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_EarthWhite" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_FileSaver" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_global" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_GovernmentBuilding" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_GovernmentBuildingmin" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_Help" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_HelpPageScript.js" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_HelpPage_Consumer.html" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_HelpPage_Contributor.html" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_History" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_IrdpCommon.js" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_IsbtLogo" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_JQuery3.4.1.js" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_jqueryselect2" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_jqueryselect2.js" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_nhsbt_and_isbt_logos" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_OrangeX" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_RareBloodDonorMap.css" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_RareBloodDonorMap.js" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_RareBloodSourceFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_RareDonorMap.html" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_RarityFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_RaritySourceAssociationFormScript" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_RedX" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_tick16x16.png" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_tick32x32.png" behavior="0" />
+      <RootComponent type="61" schemaName="nhs_warning16x16.png" behavior="0" />
+      <RootComponent type="62" schemaName="CustomerServiceTeamMember" behavior="0" />
+      <RootComponent type="91" id="{74c066e0-0cde-4910-b4da-5332ee25fa27}" schemaName="NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda" behavior="0" />
+      <RootComponent type="92" id="{0d73f8e6-c462-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{131df40b-c562-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{2a39e85d-c662-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{31153309-8b75-ea11-a811-000d3a3a7f02}" behavior="0" />
+      <RootComponent type="92" id="{57987aa8-c962-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{68a966a2-9222-eb11-a813-000d3a3a7f02}" behavior="0" />
+      <RootComponent type="92" id="{70cc0fdc-c862-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{733543dd-c762-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{87c9531e-c662-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{93f3d72b-2470-ea11-a812-000d3a3a7f02}" behavior="0" />
+      <RootComponent type="92" id="{a067e917-c562-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{a102a3e5-c562-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{c0703663-c562-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{d8d9fa08-c962-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{d9097fe9-9222-eb11-a813-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{dae66385-c578-ea11-a811-000d3a3a7f02}" behavior="0" />
+      <RootComponent type="92" id="{eb88c274-c962-ea11-a811-000d3a3a76f4}" behavior="0" />
+      <RootComponent type="92" id="{fe64ef13-2470-ea11-a812-000d3a3a7f02}" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="msdyn_suggestioninteraction" displayName="Suggestion Interaction" solution="msdyn_CSIntelligence (1.0.0.80)" />
+        <Dependent key="1" type="1" schemaName="knowledgearticle" displayName="Knowledge Article" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="1" schemaName="msdyn_knowledgearticlesuggestion" displayName="Knowledge Article Suggestion" solution="msdyn_CSIntelligence (1.0.0.80)" />
+        <Dependent key="1" type="1" schemaName="knowledgearticle" displayName="Knowledge Article" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="3" type="1" schemaName="msdyn_kbenrichment" displayName="KB Enrichment" solution="msdyn_CSIntelligence (1.0.0.80)" />
+        <Dependent key="1" type="1" schemaName="knowledgearticle" displayName="Knowledge Article" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="1" schemaName="teammobileofflineprofilemembership" displayName="TeamMobileOfflineProfileMembership" solution="MobileOfflineMembership (1.0.0.2)" />
+        <Dependent key="5" type="1" schemaName="team" displayName="Team" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="8" type="1" schemaName="entitlement" displayName="Entitlement" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="11" type="26" schemaName="Account Entitlements" displayName="Account Entitlements" parentSchemaName="entitlement" parentDisplayName="Entitlement" solution="msdynce_Service (9.0.5.56)" id="{961bf8aa-042f-4f4d-bcca-935bfc9a6994}" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="26" schemaName="My Open Opportunities" displayName="My Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003000}" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="26" schemaName="Recent Opportunities" displayName="Recent Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{9c3f7ee8-eca7-e211-9fb6-00155dd0ea05}" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="26" schemaName="All Cases for Customer" displayName="All Cases for Customer" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001039}" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="59" schemaName="Top Customers" displayName="Top Customers" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{8bc5fb18-48f2-4782-9e16-3d452fa4ddce}" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="7" type="60" displayName="Account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="17" type="66" schemaName="msdyn_MscrmControls.TreeView.TreeViewControl" displayName="msdyn_MscrmControls.TreeView.TreeViewControl" solution="msdyn_AssetCommon (1.0.6.37)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2102.2015)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="61" schemaName="Sales/ClientCommon/Sales_ClientCommon.js" displayName="Sales/ClientCommon/Sales_ClientCommon.js" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="7" type="60" displayName="Account" parentDisplayName="Account" id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="12" type="26" schemaName="My Open Opportunities" displayName="My Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003000}" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="26" schemaName="Recent Opportunities" displayName="Recent Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{9c3f7ee8-eca7-e211-9fb6-00155dd0ea05}" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="59" schemaName="Top Customers" displayName="Top Customers" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{8bc5fb18-48f2-4782-9e16-3d452fa4ddce}" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" solution="SICommon (9.0.2.1746)" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="18" type="66" schemaName="MscrmControls.CardFeedContainer.CardFeedContainer" displayName="MscrmControls.CardFeedContainer.CardFeedContainer" solution="BaseCustomControlsCore (9.0.2102.2015)" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="21" type="60" displayName="Sales Insights" parentDisplayName="Account" id="{cb430327-bcc1-416d-959d-db7592e685af}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="1" schemaName="msdyn_customerasset" displayName="Device" solution="msdyn_AssetCommon (1.0.6.37)" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="10" schemaName="msdyn_account_msdyn_customerasset_Account" displayName="msdyn_account_msdyn_customerasset_Account" parentSchemaName="account" parentDisplayName="Account" solution="msdyn_AssetCommon (1.0.6.37)" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="26" schemaName="Active Devices" displayName="Active Devices" parentSchemaName="msdyn_customerasset" parentDisplayName="Device" solution="msdyn_AssetCommon (1.0.6.37)" id="{6ecb03a4-acda-44ae-83e3-c60ba8338dbb}" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="26" type="26" schemaName="Device associated view with alerts" displayName="Device associated view with alerts" parentSchemaName="msdyn_customerasset" parentDisplayName="Device" solution="msdyn_ConnectedCustomerService (9.0.20115.1010)" id="{38cc036f-fbfe-e911-a81c-000d3ac2c6cb}" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="27" type="61" schemaName="msdyn_/ConnectedCustomerService/Account/AccountForm.js" displayName="msdyn_/ConnectedCustomerService/Account/AccountForm.js" solution="msdyn_ConnectedCustomerService (9.0.20115.1010)" />
+        <Dependent key="23" type="60" displayName="Account for Interactive experience" parentDisplayName="Account" id="{a72c7955-442b-4ea4-9499-b10cd18b4256}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="28" type="2" schemaName="territoryid" displayName="Territory" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="29" type="60" displayName="User" parentDisplayName="User" id="{c2cd9e55-d4b4-4b55-9951-16ead79643e5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="30" type="2" schemaName="siteid" displayName="Site" parentSchemaName="systemuser" parentDisplayName="User" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="29" type="60" displayName="User" parentDisplayName="User" id="{c2cd9e55-d4b4-4b55-9951-16ead79643e5}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="31" type="2" schemaName="defaultpricelevelid" displayName="Price List" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent key="32" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="2" schemaName="territoryid" displayName="Territory" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="32" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="10" type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="32" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+        <Dependent key="32" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="32" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="34" type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent key="32" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="35" type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent key="32" type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="businesscardattributes" displayName="BusinessCardAttributes" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_SalesPatch201904 (9.0.1912.1007)" />
+        <Dependent key="37" type="60" displayName="IRDP Contact" parentDisplayName="Contact" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="2" schemaName="businesscard" displayName="Business Card" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_SalesPatch201904 (9.0.1912.1007)" />
+        <Dependent key="37" type="60" displayName="IRDP Contact" parentDisplayName="Contact" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="16" type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+        <Dependent key="37" type="60" displayName="IRDP Contact" parentDisplayName="Contact" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="66" schemaName="Intelligence.BusinessCardReaderControl.BusinessCardReader" displayName="Intelligence.BusinessCardReaderControl.BusinessCardReader" solution="BaseCustomControlsCore (9.0.2102.2015)" />
+        <Dependent key="37" type="60" displayName="IRDP Contact" parentDisplayName="Contact" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="40" type="61" schemaName="msdyn_talkingpointsloader.js" displayName="msdyn_talkingpointsloader.js" solution="msdynce_Talkingpoints (9.0.1.701283)" />
+        <Dependent key="37" type="60" displayName="IRDP Contact" parentDisplayName="Contact" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="61" schemaName="Sales/ClientCommon/Sales_ClientCommon.js" displayName="Sales/ClientCommon/Sales_ClientCommon.js" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="37" type="60" displayName="IRDP Contact" parentDisplayName="Contact" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="41" type="61" schemaName="Sales/Contact/Contact_main_system_library.js" displayName="Sales/Contact/Contact_main_system_library.js" solution="msdynce_SalesPatch201904 (9.0.1912.1007)" />
+        <Dependent key="37" type="60" displayName="IRDP Contact" parentDisplayName="Contact" id="{91f337ad-a1b0-4b47-a5a7-c77e6fa4e988}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="2" schemaName="businesscardattributes" displayName="BusinessCardAttributes" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_SalesPatch201904 (9.0.1912.1007)" />
+        <Dependent key="42" type="60" displayName="Contact Quick Create" parentDisplayName="Contact" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="2" schemaName="businesscard" displayName="Business Card" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_SalesPatch201904 (9.0.1912.1007)" />
+        <Dependent key="42" type="60" displayName="Contact Quick Create" parentDisplayName="Contact" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="60" displayName="Contact Quick Create" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+        <Dependent key="42" type="60" displayName="Contact Quick Create" parentDisplayName="Contact" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="66" schemaName="Intelligence.BusinessCardReaderControl.BusinessCardReader" displayName="Intelligence.BusinessCardReaderControl.BusinessCardReader" solution="BaseCustomControlsCore (9.0.2102.2015)" />
+        <Dependent key="42" type="60" displayName="Contact Quick Create" parentDisplayName="Contact" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="43" type="2" schemaName="membershiptype" displayName="Membership Type" parentSchemaName="team" parentDisplayName="Team" solution="AuthorizationCore (1.32.0.0)" />
+        <Dependent key="44" type="60" displayName="Team" parentDisplayName="Team" id="{7ba7fac1-1418-4335-935f-f7f8dfd73fcc}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="45" type="59" schemaName="Tasks by Month Due" displayName="Tasks by Month Due" parentSchemaName="task" parentDisplayName="Task" solution="msdynce_AppCommon (9.0.4.0066)" id="{9e6a8b06-6d14-46e6-bbf5-95c388c6eb7a}" />
+        <Dependent key="46" type="60" displayName="IRDP Admin Dashboard" id="{3fd1ef9c-9e6a-ea11-a811-000d3a3a76f4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="45" type="59" schemaName="Tasks by Month Due" displayName="Tasks by Month Due" parentSchemaName="task" parentDisplayName="Task" solution="msdynce_AppCommon (9.0.4.0066)" id="{9e6a8b06-6d14-46e6-bbf5-95c388c6eb7a}" />
+        <Dependent key="47" type="60" displayName="Contributor Dashboard" id="{2854ef23-4e68-ea11-a811-000d3a3a7f02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="48" type="66" schemaName="MscrmControls.Grid.ReadOnlyGrid" displayName="MscrmControls.Grid.ReadOnlyGrid" solution="BaseCustomControlsCore (9.0.2102.2015)" />
+        <Dependent key="49" type="60" displayName="Information" parentDisplayName="Rare Blood Source" id="{22aeee41-2e06-4781-b53e-c6346dfdea99}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="50" type="66" schemaName="MscrmControls.OptionSet.OptionSetControl" displayName="MscrmControls.OptionSet.OptionSetControl" solution="CustomControlsCore (9.2.21022.00133)" />
+        <Dependent key="49" type="60" displayName="Information" parentDisplayName="Rare Blood Source" id="{22aeee41-2e06-4781-b53e-c6346dfdea99}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="51" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2102.2015)" />
+        <Dependent key="52" type="60" displayName="IRDP Account Form" parentDisplayName="Account" id="{67c3fe4a-8572-4eb7-9dc9-095699da58d0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="52" type="60" displayName="IRDP Account Form" parentDisplayName="Account" id="{67c3fe4a-8572-4eb7-9dc9-095699da58d0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="51" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2102.2015)" />
+        <Dependent key="53" type="60" displayName="IRDP Account" parentDisplayName="Account" id="{faa94f83-5816-446c-b8a7-d35f65805e03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="61" schemaName="Sales/ClientCommon/Sales_ClientCommon.js" displayName="Sales/ClientCommon/Sales_ClientCommon.js" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="53" type="60" displayName="IRDP Account" parentDisplayName="Account" id="{faa94f83-5816-446c-b8a7-d35f65805e03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent key="53" type="60" displayName="IRDP Account" parentDisplayName="Account" id="{faa94f83-5816-446c-b8a7-d35f65805e03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="54" type="62" schemaName="CustomerServiceTeamMember" solution="msdynce_CustomerServiceTeamMember (9.0.20034.2040)" />
+        <Dependent key="54" type="62" schemaName="CustomerServiceTeamMember" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="55" type="61" schemaName="Sales/_imgs/saleAdminSetting/SettingsIcon.svg" displayName="Sales/_imgs/saleAdminSetting/SettingsIcon.svg" solution="msdynce_SalesPatch (9.0.1904.3002)" />
+        <Dependent key="54" type="62" schemaName="CustomerServiceTeamMember" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

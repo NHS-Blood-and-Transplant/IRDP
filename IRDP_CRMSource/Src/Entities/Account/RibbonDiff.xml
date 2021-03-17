@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="nhs.account.ExportCSV.Button.CustomAction" Location="Mscrm.Form.account.MainTab.Save.Controls._children" Sequence="38">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:nhs.account.ExportCSV.Button.Alt" Command="nhs.account.ExportCsv.Command" Id="nhs.account.ExportCSV.Button" Image32by32="/_imgs/ribbon/exporttoexcel32.png" Image16by16="/_imgs/ribbon/exporttoexcel16.png" LabelText="$LocLabels:nhs.account.ExportCSV.Button.LabelText" Sequence="38" TemplateAlias="o1" ToolTipTitle="$LocLabels:nhs.account.ExportCSV.Button.ToolTipTitle" ToolTipDescription="$LocLabels:nhs.account.ExportCSV.Button.ToolTipDescription" ModernImage="ExportToExcel" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.account.Deactivate.Hide" Location="Mscrm.Form.account.Deactivate" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.account.Flows.RefreshCommandBar.Hide" Location="Mscrm.Form.account.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.account.FollowButton.Hide" Location="Mscrm.Form.account.FollowButton" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.account.SendSelected.Hide" Location="Mscrm.Form.account.SendSelected" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.account.UnfollowButton.Hide" Location="Mscrm.Form.account.UnfollowButton" />
+    <HideCustomAction HideActionId="nhs.Mscrm.Form.account.ViewOrgChart.Hide" Location="Mscrm.Form.account.ViewOrgChart" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.account.ChangeLayout.LeftRight.Hide" Location="Mscrm.HomepageGrid.account.ChangeLayout.LeftRight" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.account.ChangeLayout.Off.Hide" Location="Mscrm.HomepageGrid.account.ChangeLayout.Off" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.account.ChangeLayout.Top.Hide" Location="Mscrm.HomepageGrid.account.ChangeLayout.Top" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.account.Charts.Hide" Location="Mscrm.HomepageGrid.account.Charts" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.account.Charts.MenuSection0.Hide" Location="Mscrm.HomepageGrid.account.Charts.MenuSection0" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.account.Flows.RefreshCommandBar.Hide" Location="Mscrm.HomepageGrid.account.Flows.RefreshCommandBar" />
+    <HideCustomAction HideActionId="nhs.Mscrm.HomepageGrid.account.Send.Hide" Location="Mscrm.HomepageGrid.account.Send" />
+    <CustomAction Id="nhs.Mscrm.SubGrid.account.Remove.CustomAction" Location="Mscrm.SubGrid.account.MainTab.Management.Controls._children" Sequence="90">
+      <CommandUIDefinition>
+        <Button Alt="$Resources:MenuItem_Label_Remove" Command="Mscrm.HomepageGrid.Deactivate" Id="Mscrm.SubGrid.account.Remove" Image32by32="/_imgs/Workplace/Remove_32.png" Image16by16="/_imgs/ribbon/Delete_16.png" LabelText="$Resources:MenuItem_Label_Remove" Sequence="90" TemplateAlias="o2" ToolTipTitle="$Resources:Mscrm_SubGrid_Other_MainTab_Management_Remove_ToolTipTitle" ToolTipDescription="$Resources:Mscrm_SubGrid_Other_MainTab_Management_Remove_ToolTipDescription" ModernImage="Remove" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="Mscrm.AssignPrimaryRecord">
+      <EnableRules>
+        <EnableRule Id="Mscrm.FormStateNotNew" />
+        <EnableRule Id="Mscrm.AssignPrimaryPermission" />
+        <EnableRule Id="Mscrm.NotOffline" />
+        <EnableRule Id="nhs.account.Assign.EnableRule" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.AssignPrimaryPermission" />
+        <DisplayRule Id="Mscrm.NotClosedActivity" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Assign.assignObject" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="PrimaryEntityTypeName" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.AssignSelectedRecord">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+        <EnableRule Id="Mscrm.VisualizationPaneNotMaximized" />
+        <EnableRule Id="Mscrm.NotOffline" />
+        <EnableRule Id="Mscrm.IsValidForHierarchyView" />
+        <EnableRule Id="Mscrm.IsValidForHierarchyPageInUC" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.AssignSelectedEntityPermission" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Assign.assignSelectedRecords" Library="$webresource:Main_system_library.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="SelectedEntityTypeName" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="nhs.account.ExportCsv.Command">
+      <EnableRules>
+        <EnableRule Id="nhs.account.ExportCsvFormButton.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="exportRareBloodSourceCSV" Library="$webresource:nhs_AccountFormScript" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.AssignPrimaryPermission">
+        <EntityPrivilegeRule PrivilegeType="Assign" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.AssignSelectedEntityPermission">
+        <EntityPrivilegeRule PrivilegeType="Assign" PrivilegeDepth="Basic" AppliesTo="SelectedEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.NotClosedActivity">
+        <OrRule>
+          <Or>
+            <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="IsActivity" PropertyValue="false" />
+          </Or>
+          <Or>
+            <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="IsActivity" PropertyValue="true" />
+            <ValueRule Field="statecode" Value="Open" />
+          </Or>
+          <Or>
+            <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="IsActivity" PropertyValue="true" />
+            <ValueRule Field="statecode" Value="Scheduled" />
+          </Or>
+        </OrRule>
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="Mscrm.AssignPrimaryPermission">
+        <RecordPrivilegeRule PrivilegeType="Assign" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.FormStateNotNew">
+        <FormStateRule State="Create" InvertResult="true" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsValidForHierarchyPageInUC">
+        <CustomRule FunctionName="XrmCore.Rules.HierarchyView.isValidForHierarchyPageInUC" Library="$webresource:Main_system_library.js" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.IsValidForHierarchyView">
+        <CustomRule FunctionName="XrmCore.Rules.HierarchyView.isValidForHierarchyView" Library="$webresource:Main_system_library.js" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.NotOffline">
+        <CrmOfflineAccessStateRule State="Offline" InvertResult="true" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.SelectionCountAtLeastOne">
+        <SelectionCountRule AppliesTo="SelectedEntity" Minimum="1" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.VisualizationPaneNotMaximized">
+        <OrRule>
+          <Or>
+            <CommandClientTypeRule Type="Modern" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="XrmCore.Rules.Charts.disableButtonsWhenChartMaximized" Library="$webresource:Main_system_library.js">
+              <CrmParameter Value="SelectedControl" />
+            </CustomRule>
+          </Or>
+        </OrRule>
+      </EnableRule>
+      <EnableRule Id="nhs.account.Assign.EnableRule">
+        <CustomRule FunctionName="IsUserInContributorRole" Library="$webresource:nhs_AccountFormScript" InvertResult="true" />
+      </EnableRule>
+      <EnableRule Id="nhs.account.ExportCsvFormButton.EnableRule">
+        <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" Default="false" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="nhs.account.ExportCSV.Button.Alt">
+      <Titles>
+        <Title description="Export Donors/Units" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.account.ExportCSV.Button.LabelText">
+      <Titles>
+        <Title description="Export Donors/Units" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.account.ExportCSV.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Export Donors/Units" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="nhs.account.ExportCSV.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Export Donors/Units" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

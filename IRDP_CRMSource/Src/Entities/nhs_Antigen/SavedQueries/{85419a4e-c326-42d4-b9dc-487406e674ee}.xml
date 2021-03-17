@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{85419a4e-c326-42d4-b9dc-487406e674ee}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nhs_nameunicode" select="1" icon="1" preview="1">
+        <row name="result" id="nhs_antigenid">
+          <cell name="nhs_nameunicode" width="100" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="nhs_namehtml" width="100" />
+          <cell name="nhs_parentbloodgroupsystemid" width="100" />
+          <cell name="a_5045c55e1420ea11a810000d3a3a7a29.nhs_isbtno" width="100" disableSorting="1" />
+          <cell name="a_5045c55e1420ea11a810000d3a3a7a29.nhs_systemsymbol" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nhs_antigen">
+          <attribute name="nhs_nameunicode" />
+          <order attribute="nhs_nameunicode" descending="false" />
+          <attribute name="nhs_parentbloodgroupsystemid" />
+          <attribute name="nhs_namehtml" />
+          <link-entity alias="a_5045c55e1420ea11a810000d3a3a7a29" name="nhs_bloodgroupsystem" from="nhs_bloodgroupsystemid" to="nhs_parentbloodgroupsystemid" link-type="outer" visible="false">
+            <attribute name="nhs_systemsymbol" />
+            <attribute name="nhs_isbtno" />
+          </link-entity>
+          <attribute name="nhs_antigenid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.0.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Antigen Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

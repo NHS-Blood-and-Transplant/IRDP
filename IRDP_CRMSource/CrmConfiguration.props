@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup> 
+    <CrmSolutionName>IRDP</CrmSolutionName> 
+    <CrmConnectionString>Url=[CRM URL]; Username=[CRM Username]; Password=[CRM Password]; AuthType=Office365;</CrmConnectionString>
+    <ExportAutoNumberSettings>0</ExportAutoNumberSettings>
+    <ExportCallendarSettings>0</ExportCallendarSettings>
+</PropertyGroup> 
+</Project>

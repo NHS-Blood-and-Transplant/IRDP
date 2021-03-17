@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{f7d3b417-6220-42ac-9aec-228621129f3b}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="{5fb6d5c7-c82c-4625-8b19-52781514f24e}" name="newKnowledgeArticle" showlabel="false">
+          <labels>
+            <label description="Knowledge Article" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{c0a33b3e-36c9-44e5-b303-6e34545d93fc}" name="quickKnowledgeArticle" columns="1" showlabel="true" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e1601a06-225f-4170-a463-66906d4c1d1b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="quick_title" datafieldname="title" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{889c75c7-8121-428d-bb1a-8be5c2b11034}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Keywords" languagecode="1033" />
+                        </labels>
+                        <control id="quick_keywords" datafieldname="keywords" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{63c75b71-798d-b53b-9d67-15383047ec81}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Language" languagecode="1033" />
+                        </labels>
+                        <control id="languagelocaleid" datafieldname="languagelocaleid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{1c02150e-f7ed-4c20-a201-ecb2524d67c7}" name="quickKnowledgecontent" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7d7f7918-4be7-4f80-9562-646714b4d47a}" showlabel="true" rowspan="3" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="quick_description" datafieldname="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{8d2fee21-f112-4c07-a664-fdd0a8000834}" name="quickKnowledgeowner" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{84907c6a-6eec-4897-aa6c-898286c0d46a}" showlabel="true" locklevel="0" labelid="{3109bef6-061b-4d45-9950-3f19a3c21940}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="quick_ownerid" datafieldname="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9944eb1e-c703-82ee-e149-2276b30ba4d9}" showlabel="true" locklevel="0" labelid="{7df3e10b-18e7-43ff-8f7e-08a5c2dfa4c2}">
+                        <labels>
+                          <label description="Primary Author Id" languagecode="1033" />
+                        </labels>
+                        <control id="quick_primaryauthorid" datafieldname="primaryauthorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Everyone />
+      </DisplayConditions>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="KnowledgeManagement.KnowledgeArticle.Instance.form_onload" libraryName="msdyncrm_/KnowledgeManagement/KnowledgeArticle/KnowledgeArticleMainSystemLibrary.js" handlerUniqueId="48D86249-47A3-484D-9A8D-D357DC93D457" enabled="true" passExecutionContext="true" />
+          </InternalHandlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientvariables />
+          <clientincludes>
+            <internaljscriptfile src="$webresource:msdyncrm_/KnowledgeManagement/KnowledgeArticle/KnowledgeArticleMainSystemLibrary.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Knowledge Article Quick Create" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Default quick create form for Knowledge Article" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

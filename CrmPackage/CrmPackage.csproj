@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9a222c05-188e-42ac-8a70-4b7c35f4230b</ProjectGuid>
+    <ProjectTypeGuids>{88A30576-7583-4F75-8136-5EFD2C14ADFF}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IRDP_VS_Project.CrmPackage</RootNamespace>
+    <AssemblyName>IRDP_VS_Project.CrmPackage</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputFile>CrmPackage.zip</OutputFile>
+    <Name>CrmPackage</Name>
+    <MainFile>WebResources\Script (JScript)\nhs_AntigenFormScript.js</MainFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="WebResources\Cascading Stylesheet %28CSS%29\" />
+    <Folder Include="WebResources\Script %28JScript%29\" />
+    <Folder Include="WebResources\Web Page %28HTML%29\" />
+    <RegisterPlugin Include="RegisterFile.crmregister">
+      <DisplayName>RegisterFile</DisplayName>
+      <UniqueName>nhs_RegisterFile</UniqueName>
+      <WebResourceType>NotSupported</WebResourceType>
+    </RegisterPlugin>
+    <Folder Include="WebResources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IRDP_Customisations\IRDP_Customisations.csproj">
+      <Name>IRDP_Customisations</Name>
+      <Project>{8a6dd386-b78d-4d43-90fd-ae68706b2025}</Project>
+      <Private>True</Private>
+      <SilverlightApplication>False</SilverlightApplication>
+    </ProjectReference>
+    <ProjectReference Include="..\IRDP_Workflows\IRDP_Workflows.csproj">
+      <Name>IRDP_Workflows</Name>
+      <Project>{914b379b-68e6-4450-99cd-55a9a0aeaa9a}</Project>
+      <Private>True</Private>
+      <SilverlightApplication>False</SilverlightApplication>
+    </ProjectReference>
+    <ProjectReference Include="..\NHSBT.IRDP.Plugins\NHSBT.IRDP.Plugins.csproj">
+      <Name>NHSBT.IRDP.Plugins</Name>
+      <Project>{846e3593-ae32-47b6-896e-e1910ad6ef3e}</Project>
+      <Private>True</Private>
+      <SilverlightApplication>False</SilverlightApplication>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet %28CSS%29\nhs_RareBloodDonorMap.css">
+      <DisplayName>Rare Donor Map Web Page</DisplayName>
+      <UniqueName>nhs_RareBloodDonorMap.css</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Cascading Stylesheet (CSS)\nhs_jqueryselect2.css">
+      <DisplayName>nhs_jqueryselect2.css</DisplayName>
+      <UniqueName>nhs_jqueryselect2</UniqueName>
+      <WebResourceType>CascadingStylesheet</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_AnnotationsControl.js">
+      <DisplayName>nhs_AnnotationsControl.js</DisplayName>
+      <UniqueName>nhs_AnnotationsControl.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\nhs_HelpPageScript.js">
+      <DisplayName>nhs_HelpPageScript.js</DisplayName>
+      <UniqueName>nhs_HelpPageScript.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\nhs_FileSaver.js">
+      <DisplayName>nhs_FileSaver</DisplayName>
+      <UniqueName>nhs_FileSaver</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\nhs_IrdpCommon.js">
+      <DisplayName>nhs_IrdpCommon.js</DisplayName>
+      <UniqueName>nhs_IrdpCommon.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_AccountFormScript.js">
+      <DisplayName>nhs_AccountFormScript</DisplayName>
+      <UniqueName>nhs_AccountFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_AntigenSourceAssociationFormScript.js">
+      <DisplayName>nhs_AntigenSourceAssociationFormScript</DisplayName>
+      <UniqueName>nhs_AntigenSourceAssociationFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_ContactFormScript.js">
+      <DisplayName>nhs_ContactFormScript</DisplayName>
+      <UniqueName>nhs_ContactFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_global.js">
+      <DisplayName>nhs_global</DisplayName>
+      <UniqueName>nhs_global</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_RareBloodSourceFormScript.js">
+      <DisplayName>nhs_RareBloodSourceFormScript</DisplayName>
+      <UniqueName>nhs_RareBloodSourceFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_RaritySourceAssociationFormScript.js">
+      <DisplayName>nhs_RaritySourceAssociationFormScript</DisplayName>
+      <UniqueName>nhs_RaritySourceAssociationFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\nhs_jqueryselect2.js">
+      <DisplayName>nhs_jqueryselect2.js</DisplayName>
+      <UniqueName>nhs_jqueryselect2.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\nhs_BloodGroupSystemFormScript.js">
+      <DisplayName>nhs_BloodGroupSystemFormScript</DisplayName>
+      <UniqueName>nhs_BloodGroupSystemFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script (JScript)\nhs_RarityFormScript.js">
+      <DisplayName>nhs_RarityFormScript</DisplayName>
+      <UniqueName>nhs_RarityFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_AntigenFormScript.js">
+      <DisplayName>nhs_AntigenFormScript</DisplayName>
+      <UniqueName>nhs_AntigenFormScript</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_JQuery3.4.1.js">
+      <DisplayName>JQuery3.4.1</DisplayName>
+      <UniqueName>nhs_JQuery3.4.1.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Script %28JScript%29\nhs_RareBloodDonorMap.js">
+      <DisplayName>Rare Donor Map Scripts</DisplayName>
+      <UniqueName>nhs_RareBloodDonorMap.js</UniqueName>
+      <WebResourceType>Script</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Web Page %28HTML%29\nhs_AnnotationsControl.html">
+      <DisplayName>nhs_AnnotationsControl.html</DisplayName>
+      <UniqueName>nhs_AnnotationsControl.html</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Web Page %28HTML%29\nhs_HelpPage_Consumer.html">
+      <DisplayName>nhs_HelpPage_Consumer.html</DisplayName>
+      <UniqueName>nhs_HelpPage_Consumer.html</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Web Page (HTML)\nhs_HelpPage_Contributor.html">
+      <DisplayName>nhs_HelpPage_Contributor.html</DisplayName>
+      <UniqueName>nhs_HelpPage_Contributor.html</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </CRMWebResource>
+    <CRMWebResource Include="WebResources\Web Page (HTML)\nhs_RareBloodDonorMap.html">
+      <DisplayName>nhs_RareDonorMap.html</DisplayName>
+      <UniqueName>nhs_RareDonorMap.html</UniqueName>
+      <WebResourceType>WebPage</WebResourceType>
+    </CRMWebResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--<Import Project="$(MSBuildExtensionsPath32)\Microsoft\CRM\Microsoft.CrmDeveloperTools.12.targets" />-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+			 Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

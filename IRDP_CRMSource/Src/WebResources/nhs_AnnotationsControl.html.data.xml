@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{88a48885-7367-ea11-a811-000d3a3a76f4}</WebResourceId>
+  <Name>nhs_AnnotationsControl.html</Name>
+  <DisplayName>nhs_AnnotationsControl.html</DisplayName>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>0.0.0116.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/nhs_AnnotationsControlhtml88A48885-7367-EA11-A811-000D3A3A76F4</FileName>
+</WebResource>

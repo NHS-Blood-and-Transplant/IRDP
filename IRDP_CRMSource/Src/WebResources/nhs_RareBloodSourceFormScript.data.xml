@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{6f0064ca-8942-ea11-a812-000d3a3a7f02}</WebResourceId>
+  <Name>nhs_RareBloodSourceFormScript</Name>
+  <DisplayName>nhs_RareBloodSourceFormScript</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.0.0022.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/nhs_RareBloodSourceFormScript6F0064CA-8942-EA11-A812-000D3A3A7F02</FileName>
+</WebResource>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform unmodified="1">
+    <formid>{ddc7bced-64ae-4496-a8cf-bc8699cf1ab0}</formid>
+    <IntroducedVersion>8.0.0.0</IntroducedVersion>
+    <FormPresentation>0</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs showlabels="false">
+        <tab name="general" verticallayout="true" id="{68B71563-9089-4FEC-A596-1CB123650BA8}" IsUserDefined="0">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="ViewCount" labelwidth="90" id="{c4314abc-de59-413d-bc6f-e78f6af89674}" IsUserDefined="0" showlabel="false" showbar="false">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{256fc9c6-3505-445b-a053-8cc0b9fd2b8b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Total views" languagecode="1033" />
+                        </labels>
+                        <control id="knowledgearticleviews" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="knowledgearticleviews" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Article View Count" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form that displays the view count of root article." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

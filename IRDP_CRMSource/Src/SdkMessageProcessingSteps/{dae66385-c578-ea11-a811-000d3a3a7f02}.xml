@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="NHSBT.IRDP.Plugins.RareBloodSourceImportPlugin: Pre Create" SdkMessageProcessingStepId="{dae66385-c578-ea11-a811-000d3a3a7f02}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+  <PluginTypeName>NHSBT.IRDP.Plugins.RareBloodSourceImportPlugin, NHSBT.IRDP.Plugins, Version=1.3.35.0, Culture=neutral, PublicKeyToken=943bd39fffd4bfda</PluginTypeName>
+  <PluginTypeId>8f7e1ab0-44c6-4282-be50-4f0d11c263fd</PluginTypeId>
+  <PrimaryEntity>nhs_rarebloodsourceimport</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <Description>NHSBT.IRDP.Plugins.RareBloodSourceImportPlugin: Create of nhs_rarebloodsourceimport</Description>
+  <FilteringAttributes></FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>20</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

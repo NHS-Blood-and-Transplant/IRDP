@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{e88eefde-2770-ea11-a812-000d3a3a76f4}</WebResourceId>
+  <Name>nhs_Bloodbag</Name>
+  <DisplayName>SVG - Bloodbag</DisplayName>
+  <WebResourceType>11</WebResourceType>
+  <IntroducedVersion>0.0.0138.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/nhs_BloodbagE88EEFDE-2770-EA11-A812-000D3A3A76F4</FileName>
+</WebResource>
